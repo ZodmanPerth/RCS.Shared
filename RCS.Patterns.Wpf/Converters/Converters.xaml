@@ -1,0 +1,211 @@
+<ResourceDictionary
+	xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+	xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+	xmlns:ptConverters="clr-namespace:Patterns.Converters"
+	xmlns:system="clr-namespace:System;assembly=System.Runtime"
+>
+	<!--
+		Reference:
+		<ResourceDictionary Source="pack://application:,,,/OKB.Patterns.Wpf;component/Converters/Converters.xaml" />
+	-->
+	
+	<!-- ======== BooleanToAnything ======== -->
+
+	<!--Visibility-->
+
+	<ptConverters:BooleanToAnythingConverter x:Key="Patterns.Converter.VisibleWhenTrue">
+		<ptConverters:BooleanToAnythingConverter.TrueValue>
+			<Visibility>Visible</Visibility>
+		</ptConverters:BooleanToAnythingConverter.TrueValue>
+		<ptConverters:BooleanToAnythingConverter.FalseValue>
+			<Visibility>Collapsed</Visibility>
+		</ptConverters:BooleanToAnythingConverter.FalseValue>
+		<ptConverters:BooleanToAnythingConverter.NullValue>
+			<Visibility>Collapsed</Visibility>
+		</ptConverters:BooleanToAnythingConverter.NullValue>
+	</ptConverters:BooleanToAnythingConverter>
+
+	<ptConverters:BooleanToAnythingConverter x:Key="Patterns.Converter.VisibleWhenFalse">
+		<ptConverters:BooleanToAnythingConverter.TrueValue>
+			<Visibility>Collapsed</Visibility>
+		</ptConverters:BooleanToAnythingConverter.TrueValue>
+		<ptConverters:BooleanToAnythingConverter.FalseValue>
+			<Visibility>Visible</Visibility>
+		</ptConverters:BooleanToAnythingConverter.FalseValue>
+		<ptConverters:BooleanToAnythingConverter.NullValue>
+			<Visibility>Visible</Visibility>
+		</ptConverters:BooleanToAnythingConverter.NullValue>
+	</ptConverters:BooleanToAnythingConverter>
+
+	<ptConverters:BooleanToAnythingConverter x:Key="Patterns.Converter.VisibleWhenNull">
+		<ptConverters:BooleanToAnythingConverter.TrueValue>
+			<Visibility>Collapsed</Visibility>
+		</ptConverters:BooleanToAnythingConverter.TrueValue>
+		<ptConverters:BooleanToAnythingConverter.FalseValue>
+			<Visibility>Collapsed</Visibility>
+		</ptConverters:BooleanToAnythingConverter.FalseValue>
+		<ptConverters:BooleanToAnythingConverter.NullValue>
+			<Visibility>Visible</Visibility>
+		</ptConverters:BooleanToAnythingConverter.NullValue>
+	</ptConverters:BooleanToAnythingConverter>
+
+	<ptConverters:BooleanToAnythingConverter x:Key="Patterns.Converter.VisibleWhenNotNull">
+		<ptConverters:BooleanToAnythingConverter.TrueValue>
+			<Visibility>Visible</Visibility>
+		</ptConverters:BooleanToAnythingConverter.TrueValue>
+		<ptConverters:BooleanToAnythingConverter.FalseValue>
+			<Visibility>Visible</Visibility>
+		</ptConverters:BooleanToAnythingConverter.FalseValue>
+		<ptConverters:BooleanToAnythingConverter.NullValue>
+			<Visibility>Collapsed</Visibility>
+		</ptConverters:BooleanToAnythingConverter.NullValue>
+	</ptConverters:BooleanToAnythingConverter>
+
+	<ptConverters:BooleanToAnythingConverter x:Key="Patterns.Converter.CollapsedWhenFalse">
+		<ptConverters:BooleanToAnythingConverter.TrueValue>
+			<Visibility>Visible</Visibility>
+		</ptConverters:BooleanToAnythingConverter.TrueValue>
+		<ptConverters:BooleanToAnythingConverter.FalseValue>
+			<Visibility>Collapsed</Visibility>
+		</ptConverters:BooleanToAnythingConverter.FalseValue>
+		<ptConverters:BooleanToAnythingConverter.NullValue>
+			<Visibility>Collapsed</Visibility>
+		</ptConverters:BooleanToAnythingConverter.NullValue>
+	</ptConverters:BooleanToAnythingConverter>
+
+	<ptConverters:BooleanToAnythingConverter x:Key="Patterns.Converter.CollapsedWhenTrue">
+		<ptConverters:BooleanToAnythingConverter.TrueValue>
+			<Visibility>Collapsed</Visibility>
+		</ptConverters:BooleanToAnythingConverter.TrueValue>
+		<ptConverters:BooleanToAnythingConverter.FalseValue>
+			<Visibility>Visible</Visibility>
+		</ptConverters:BooleanToAnythingConverter.FalseValue>
+		<ptConverters:BooleanToAnythingConverter.NullValue>
+			<Visibility>Visible</Visibility>
+		</ptConverters:BooleanToAnythingConverter.NullValue>
+	</ptConverters:BooleanToAnythingConverter>
+
+	<ptConverters:BooleanToAnythingConverter x:Key="Patterns.Converter.CollapsedWhenNull">
+		<ptConverters:BooleanToAnythingConverter.TrueValue>
+			<Visibility>Visible</Visibility>
+		</ptConverters:BooleanToAnythingConverter.TrueValue>
+		<ptConverters:BooleanToAnythingConverter.FalseValue>
+			<Visibility>Collapsed</Visibility>
+		</ptConverters:BooleanToAnythingConverter.FalseValue>
+		<ptConverters:BooleanToAnythingConverter.NullValue>
+			<Visibility>Collapsed</Visibility>
+		</ptConverters:BooleanToAnythingConverter.NullValue>
+	</ptConverters:BooleanToAnythingConverter>
+
+	<ptConverters:BooleanToAnythingConverter x:Key="Patterns.Converter.CollapsedWhenNotNull">
+		<ptConverters:BooleanToAnythingConverter.TrueValue>
+			<Visibility>Collapsed</Visibility>
+		</ptConverters:BooleanToAnythingConverter.TrueValue>
+		<ptConverters:BooleanToAnythingConverter.FalseValue>
+			<Visibility>Collapsed</Visibility>
+		</ptConverters:BooleanToAnythingConverter.FalseValue>
+		<ptConverters:BooleanToAnythingConverter.NullValue>
+			<Visibility>Visible</Visibility>
+		</ptConverters:BooleanToAnythingConverter.NullValue>
+	</ptConverters:BooleanToAnythingConverter>
+
+	<ptConverters:BooleanToAnythingConverter x:Key="Patterns.Converter.HiddenWhenFalse">
+		<ptConverters:BooleanToAnythingConverter.TrueValue>
+			<Visibility>Visible</Visibility>
+		</ptConverters:BooleanToAnythingConverter.TrueValue>
+		<ptConverters:BooleanToAnythingConverter.FalseValue>
+			<Visibility>Hidden</Visibility>
+		</ptConverters:BooleanToAnythingConverter.FalseValue>
+		<ptConverters:BooleanToAnythingConverter.NullValue>
+			<Visibility>Hidden</Visibility>
+		</ptConverters:BooleanToAnythingConverter.NullValue>
+	</ptConverters:BooleanToAnythingConverter>
+
+	<ptConverters:BooleanToAnythingConverter x:Key="Patterns.Converter.HiddenWhenTrue">
+		<ptConverters:BooleanToAnythingConverter.TrueValue>
+			<Visibility>Hidden</Visibility>
+		</ptConverters:BooleanToAnythingConverter.TrueValue>
+		<ptConverters:BooleanToAnythingConverter.FalseValue>
+			<Visibility>Visible</Visibility>
+		</ptConverters:BooleanToAnythingConverter.FalseValue>
+		<ptConverters:BooleanToAnythingConverter.NullValue>
+			<Visibility>Visible</Visibility>
+		</ptConverters:BooleanToAnythingConverter.NullValue>
+	</ptConverters:BooleanToAnythingConverter>
+
+	<ptConverters:BooleanToAnythingConverter x:Key="Patterns.Converter.HiddenWhenNull">
+		<ptConverters:BooleanToAnythingConverter.TrueValue>
+			<Visibility>Visible</Visibility>
+		</ptConverters:BooleanToAnythingConverter.TrueValue>
+		<ptConverters:BooleanToAnythingConverter.FalseValue>
+			<Visibility>Hidden</Visibility>
+		</ptConverters:BooleanToAnythingConverter.FalseValue>
+		<ptConverters:BooleanToAnythingConverter.NullValue>
+			<Visibility>Hidden</Visibility>
+		</ptConverters:BooleanToAnythingConverter.NullValue>
+	</ptConverters:BooleanToAnythingConverter>
+
+	<ptConverters:BooleanToAnythingConverter x:Key="Patterns.Converter.HiddenWhenNotNull">
+		<ptConverters:BooleanToAnythingConverter.TrueValue>
+			<Visibility>Hidden</Visibility>
+		</ptConverters:BooleanToAnythingConverter.TrueValue>
+		<ptConverters:BooleanToAnythingConverter.FalseValue>
+			<Visibility>Hidden</Visibility>
+		</ptConverters:BooleanToAnythingConverter.FalseValue>
+		<ptConverters:BooleanToAnythingConverter.NullValue>
+			<Visibility>Visible</Visibility>
+		</ptConverters:BooleanToAnythingConverter.NullValue>
+	</ptConverters:BooleanToAnythingConverter>
+
+
+	<!--Boolean-->
+
+	<ptConverters:BooleanToAnythingConverter x:Key="Patterns.Converter.TrueWhenFalse">
+		<ptConverters:BooleanToAnythingConverter.TrueValue>
+			<system:Boolean>False</system:Boolean>
+		</ptConverters:BooleanToAnythingConverter.TrueValue>
+		<ptConverters:BooleanToAnythingConverter.FalseValue>
+			<system:Boolean>True</system:Boolean>
+		</ptConverters:BooleanToAnythingConverter.FalseValue>
+		<ptConverters:BooleanToAnythingConverter.NullValue>
+			<system:Boolean>True</system:Boolean>
+		</ptConverters:BooleanToAnythingConverter.NullValue>
+	</ptConverters:BooleanToAnythingConverter>
+
+	<ptConverters:BooleanToAnythingConverter x:Key="Patterns.Converter.TrueWhenNull">
+		<ptConverters:BooleanToAnythingConverter.TrueValue>
+			<system:Boolean>False</system:Boolean>
+		</ptConverters:BooleanToAnythingConverter.TrueValue>
+		<ptConverters:BooleanToAnythingConverter.FalseValue>
+			<system:Boolean>True</system:Boolean>
+		</ptConverters:BooleanToAnythingConverter.FalseValue>
+		<ptConverters:BooleanToAnythingConverter.NullValue>
+			<system:Boolean>True</system:Boolean>
+		</ptConverters:BooleanToAnythingConverter.NullValue>
+	</ptConverters:BooleanToAnythingConverter>
+
+	<ptConverters:BooleanToAnythingConverter x:Key="Patterns.Converter.FalseWhenTrue">
+		<ptConverters:BooleanToAnythingConverter.TrueValue>
+			<system:Boolean>False</system:Boolean>
+		</ptConverters:BooleanToAnythingConverter.TrueValue>
+		<ptConverters:BooleanToAnythingConverter.FalseValue>
+			<system:Boolean>True</system:Boolean>
+		</ptConverters:BooleanToAnythingConverter.FalseValue>
+		<ptConverters:BooleanToAnythingConverter.NullValue>
+			<system:Boolean>False</system:Boolean>
+		</ptConverters:BooleanToAnythingConverter.NullValue>
+	</ptConverters:BooleanToAnythingConverter>
+
+	<ptConverters:BooleanToAnythingConverter x:Key="Patterns.Converter.FalseWhenNull">
+		<ptConverters:BooleanToAnythingConverter.TrueValue>
+			<system:Boolean>False</system:Boolean>
+		</ptConverters:BooleanToAnythingConverter.TrueValue>
+		<ptConverters:BooleanToAnythingConverter.FalseValue>
+			<system:Boolean>True</system:Boolean>
+		</ptConverters:BooleanToAnythingConverter.FalseValue>
+		<ptConverters:BooleanToAnythingConverter.NullValue>
+			<system:Boolean>False</system:Boolean>
+		</ptConverters:BooleanToAnythingConverter.NullValue>
+	</ptConverters:BooleanToAnythingConverter>
+	
+</ResourceDictionary>

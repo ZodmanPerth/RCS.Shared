@@ -1,0 +1,11 @@
+<Project>
+ <PropertyGroup Condition="'$(Configuration)'!='Debug'">
+  <TreatWarningsAsErrors>False</TreatWarningsAsErrors>
+ </PropertyGroup>
+ <PropertyGroup>
+  <CheckEolTargetFramework>false</CheckEolTargetFramework>
+  <!-- Preview lang version for Community Toolkit MVVM 8.4.0 to allow partial properties -->
+  <!-- https://devblogs.microsoft.com/dotnet/announcing-the-dotnet-community-toolkit-840/#:~:text=this%20by%20adding-,%3CLangVersion%3Epreview%3C/LangVersion%3E,-to%20your%20.csproj -->
+  <LangVersion>preview</LangVersion>
+ </PropertyGroup>
+</Project>
