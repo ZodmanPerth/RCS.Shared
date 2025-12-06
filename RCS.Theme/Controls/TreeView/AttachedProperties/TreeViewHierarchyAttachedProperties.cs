@@ -2,7 +2,7 @@
 using System.Windows.Controls;
 using System.Windows.Data;
 
-namespace OKB.Theme.AttachedProperties;
+namespace RCS.Theme.AttachedProperties;
 
 /// <summary>Generates a simple hierarchical data template</summary>
 public class TreeViewHierarchyAttachedProperties

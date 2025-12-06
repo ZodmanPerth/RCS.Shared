@@ -6,12 +6,12 @@
 >
 	<!--
 		Reference:
-		<ResourceDictionary Source="pack://application:,,,/OKB.Theme;component/Controls/Lists/Base.ListBox.xaml" />
+		<ResourceDictionary Source="pack://application:,,,/RCS.Theme;component/Controls/Lists/Base.ListBox.xaml" />
 	-->
 
 	<ResourceDictionary.MergedDictionaries>
-		<ResourceDictionary Source="pack://application:,,,/OKB.Theme;component/Controls/Lists/Colours.ListBox.xaml" />
-		<ResourceDictionary Source="pack://application:,,,/OKB.Theme;component/Controls/ScrollViewer/Base.ScrollViewer.xaml" />
+		<ResourceDictionary Source="pack://application:,,,/RCS.Theme;component/Controls/Lists/Colours.ListBox.xaml" />
+		<ResourceDictionary Source="pack://application:,,,/RCS.Theme;component/Controls/ScrollViewer/Base.ScrollViewer.xaml" />
 	</ResourceDictionary.MergedDictionaries>
 
 

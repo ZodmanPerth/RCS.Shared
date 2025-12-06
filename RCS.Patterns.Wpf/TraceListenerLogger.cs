@@ -1,7 +1,7 @@
 ﻿using OKB.Logging;
 using System.Diagnostics;
 
-namespace OKB.Patterns;
+namespace RCS.Patterns;
 
 /// <summary>Directs trace messages to the logger</summary>
 // KUDOS: https://stackoverflow.com/a/19610447/117797

@@ -2,7 +2,7 @@
 using System.Globalization;
 using System.Windows.Media;
 
-namespace OKB.Patterns.Wpf.Extensions;
+namespace RCS.Patterns.Wpf.Extensions;
 
 public static class SystemWindowsMediaExtensions
 {

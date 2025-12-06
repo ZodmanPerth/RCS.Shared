@@ -6,22 +6,22 @@
 >
 	<!--
 		Reference:
-		<ResourceDictionary Source="pack://application:,,,/OKB.Theme;component/Controls/TreeView/Base.TreeView.xaml" />
+		<ResourceDictionary Source="pack://application:,,,/RCS.Theme;component/Controls/TreeView/Base.TreeView.xaml" />
 	-->
 	
 	<!--
 		NOTE:
 		Use the following attached properties to simply bind TreeView to hierarchical data model item sources:
 		
-		xmlns:thap="clr-namespace:OKB.Theme.AttachedProperties;assembly=OKB.Theme"
+		xmlns:thap="clr-namespace:RCS.Theme.AttachedProperties;assembly=RCS.Theme"
 		...
 		thap:TreeViewHierarchyAttachedProperties.DisplayPath="SourceName"
 		thap:TreeViewHierarchyAttachedProperties.ChildrenPath="Children"
 	-->
 
 	<ResourceDictionary.MergedDictionaries>
-		<ResourceDictionary Source="pack://application:,,,/OKB.Theme;component/Controls/TreeView/Colours.TreeView.xaml" />
-		<ResourceDictionary Source="pack://application:,,,/OKB.Theme;component/Controls/ScrollViewer/Base.ScrollViewer.xaml" />
+		<ResourceDictionary Source="pack://application:,,,/RCS.Theme;component/Controls/TreeView/Colours.TreeView.xaml" />
+		<ResourceDictionary Source="pack://application:,,,/RCS.Theme;component/Controls/ScrollViewer/Base.ScrollViewer.xaml" />
 	</ResourceDictionary.MergedDictionaries>
 
 
@@ -47,7 +47,7 @@
 	<Thickness x:Key="TreeViewItem.Padding">1,2,0,0</Thickness>
 	<Thickness x:Key="TreeViewItem.BorderThickness">0</Thickness>
 	<system:Boolean x:Key="TreeViewItem.SnapsToDevicePixels">True</system:Boolean>
-	<FontFamily x:Key="TreeViewItem.FontFamily">pack://application:,,,/OKB.Assets;component/Assets/Fonts/Inter/Inter.ttf#Inter</FontFamily>
+	<FontFamily x:Key="TreeViewItem.FontFamily">pack://application:,,,/RCS.Assets;component/Assets/Fonts/Inter/Inter.ttf#Inter</FontFamily>
 	<system:Double x:Key="TreeViewItem.FontSize">12</system:Double>
 	<FontWeight x:Key="TreeViewItem.FontWeight">Normal</FontWeight>
 
@@ -63,7 +63,7 @@
 	<VerticalAlignment x:Key="TreeView.VerticalContentAlignment">Center</VerticalAlignment>
 	<system:Boolean x:Key="TreeView.ScrollViewer.Focusable">False</system:Boolean>
 	<system:Boolean x:Key="TreeView.ScrollViewer.CanContentScroll">False</system:Boolean>
-	<FontFamily x:Key="TreeView.FontFamily">pack://application:,,,/OKB.Assets;component/Assets/Fonts/Inter/Inter.ttf#Inter</FontFamily>
+	<FontFamily x:Key="TreeView.FontFamily">pack://application:,,,/RCS.Assets;component/Assets/Fonts/Inter/Inter.ttf#Inter</FontFamily>
 	<system:Double x:Key="TreeView.FontSize">12</system:Double>
 	<FontWeight x:Key="TreeView.FontWeight">Normal</FontWeight>
 

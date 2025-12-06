@@ -16,7 +16,7 @@
   </ItemGroup>
 
   <ItemGroup>
-    <ProjectReference Include="..\RCS.Patterns.Core\OKB.Patterns.Core.csproj" />
+    <ProjectReference Include="..\RCS.Patterns.Core\RCS.Patterns.Core.csproj" />
   </ItemGroup>
 
 </Project>

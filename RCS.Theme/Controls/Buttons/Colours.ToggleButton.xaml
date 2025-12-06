@@ -4,7 +4,7 @@
 >
 	<!--
 		Reference:
-		<ResourceDictionary Source="pack://application:,,,/OKB.Theme;component/Controls/Buttons/Colours.ToggleButton.xaml" />
+		<ResourceDictionary Source="pack://application:,,,/RCS.Theme;component/Controls/Buttons/Colours.ToggleButton.xaml" />
 	-->
 	
 	<!--Core colours from aero2-->

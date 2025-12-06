@@ -6,7 +6,7 @@
 >
 	<!--
 		Reference:
-		<ResourceDictionary Source="pack://application:,,,/OKB.Patterns.Wpf;component/Converters/Converters.xaml" />
+		<ResourceDictionary Source="pack://application:,,,/RCS.Patterns.Wpf;component/Converters/Converters.xaml" />
 	-->
 	
 	<!-- ======== BooleanToAnything ======== -->

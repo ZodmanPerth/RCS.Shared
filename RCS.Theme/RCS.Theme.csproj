@@ -13,9 +13,9 @@
   </ItemGroup>
 
   <ItemGroup>
-    <ProjectReference Include="..\RCS.Assets\OKB.Assets.csproj" />
-    <ProjectReference Include="..\RCS.Controls\OKB.Controls.csproj" />
-    <ProjectReference Include="..\RCS.Patterns.Wpf\OKB.Patterns.Wpf.csproj" />
+    <ProjectReference Include="..\RCS.Assets\RCS.Assets.csproj" />
+    <ProjectReference Include="..\RCS.Controls\RCS.Controls.csproj" />
+    <ProjectReference Include="..\RCS.Patterns.Wpf\RCS.Patterns.Wpf.csproj" />
   </ItemGroup>
 
 </Project>

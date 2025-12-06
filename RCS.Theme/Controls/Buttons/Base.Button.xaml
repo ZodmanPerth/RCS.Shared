@@ -7,11 +7,11 @@
 >
 	<!--
 		Reference:
-		<ResourceDictionary Source="pack://application:,,,/OKB.Theme;component/Controls/Buttons/Base.Button.xaml" />
+		<ResourceDictionary Source="pack://application:,,,/RCS.Theme;component/Controls/Buttons/Base.Button.xaml" />
 	-->
 
 	<ResourceDictionary.MergedDictionaries>
-		<ResourceDictionary Source="pack://application:,,,/OKB.Theme;component/Controls/Buttons/Colours.Button.xaml" />
+		<ResourceDictionary Source="pack://application:,,,/RCS.Theme;component/Controls/Buttons/Colours.Button.xaml" />
 	</ResourceDictionary.MergedDictionaries>
 
 
@@ -37,10 +37,10 @@
 	<CornerRadius x:Key="Button.CornerRadius.Disabled">1</CornerRadius>
 
 	
-	<FontFamily x:Key="Button.FontFamily">pack://application:,,,/OKB.Assets;component/Assets/Fonts/Inter/Inter.ttf#Inter</FontFamily>
-	<FontFamily x:Key="Button.FontFamily.Hover">pack://application:,,,/OKB.Assets;component/Assets/Fonts/Inter/Inter.ttf#Inter</FontFamily>
-	<FontFamily x:Key="Button.FontFamily.Pressed">pack://application:,,,/OKB.Assets;component/Assets/Fonts/Inter/Inter.ttf#Inter</FontFamily>
-	<FontFamily x:Key="Button.FontFamily.Disabled">pack://application:,,,/OKB.Assets;component/Assets/Fonts/Inter/Inter.ttf#Inter</FontFamily>
+	<FontFamily x:Key="Button.FontFamily">pack://application:,,,/RCS.Assets;component/Assets/Fonts/Inter/Inter.ttf#Inter</FontFamily>
+	<FontFamily x:Key="Button.FontFamily.Hover">pack://application:,,,/RCS.Assets;component/Assets/Fonts/Inter/Inter.ttf#Inter</FontFamily>
+	<FontFamily x:Key="Button.FontFamily.Pressed">pack://application:,,,/RCS.Assets;component/Assets/Fonts/Inter/Inter.ttf#Inter</FontFamily>
+	<FontFamily x:Key="Button.FontFamily.Disabled">pack://application:,,,/RCS.Assets;component/Assets/Fonts/Inter/Inter.ttf#Inter</FontFamily>
 	
 	<system:Double x:Key="Button.FontSize">12</system:Double>
 	<system:Double x:Key="Button.FontSize.Hover">12</system:Double>

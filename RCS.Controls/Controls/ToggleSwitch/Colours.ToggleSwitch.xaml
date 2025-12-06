@@ -4,7 +4,7 @@
 >
 	<!--
 		Reference:
-		<ResourceDictionary Source="pack://application:,,,/OKB.Controls;component/Controls/ToggleSwitch/Colours.ToggleSwitch.xaml" />
+		<ResourceDictionary Source="pack://application:,,,/RCS.Controls;component/Controls/ToggleSwitch/Colours.ToggleSwitch.xaml" />
 	-->
 	
 	<Color x:Key="Colour.ToggleSwitch.Foreground">Black</Color>

@@ -2,7 +2,7 @@
 using System.Windows;
 using System.Windows.Controls;
 
-namespace OKB.Controls.Behaviours;
+namespace RCS.Controls.Behaviours;
 
 /// <summary>Attaches custom attached behaviours</summary>
 public static class ScrollViewerBehaviourManager

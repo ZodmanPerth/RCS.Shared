@@ -17,7 +17,7 @@ public partial class ColourSwatchPickerViewModel : ObservableObject
 	{
 		var designBrushResourceDictionary = new ResourceDictionary
 		{
-			Source = new Uri("pack://application:,,,/OKB.Theme;component/Design/Design.Brushes.xaml", UriKind.RelativeOrAbsolute)
+			Source = new Uri("pack://application:,,,/RCS.Theme;component/Design/Design.Brushes.xaml", UriKind.RelativeOrAbsolute)
 		};
 
 		AvailableColours =

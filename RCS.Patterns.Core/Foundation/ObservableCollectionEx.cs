@@ -2,7 +2,7 @@
 using System.Collections.Specialized;
 using System.ComponentModel;
 
-namespace OKB.Patterns;
+namespace RCS.Patterns;
 
 public class ObservableCollectionEx<T> : ObservableCollection<T>
 {

@@ -1,6 +1,6 @@
 ﻿using OKB.Logging;
 using OKB.Models;
-using OKB.Patterns;
+using RCS.Patterns;
 using OKB.Utilities;
 using CommunityToolkit.Mvvm.ComponentModel;
 using Windows.ApplicationModel.DataTransfer;

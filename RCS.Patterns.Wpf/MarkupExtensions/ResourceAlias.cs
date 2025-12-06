@@ -2,7 +2,7 @@
 using System.Windows.Markup;
 using System.Windows.Media;
 
-namespace OKB.Patterns.Wpf.MarkupExtensions;
+namespace RCS.Patterns.Wpf.MarkupExtensions;
 
 
 public class HorizontalAlignmentAlias : ResourceAlias<HorizontalAlignment> { /* nada */ }

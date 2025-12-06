@@ -6,11 +6,11 @@
 >
 	<!--
 		Reference:
-		<ResourceDictionary Source="pack://application:,,,/OKB.Theme;component/Controls/Lists/Base.ToolTip.xaml" />
+		<ResourceDictionary Source="pack://application:,,,/RCS.Theme;component/Controls/Lists/Base.ToolTip.xaml" />
 	-->
 
 	<ResourceDictionary.MergedDictionaries>
-		<ResourceDictionary Source="pack://application:,,,/OKB.Theme;component/Controls/ToolTips/Colours.ToolTip.xaml" />
+		<ResourceDictionary Source="pack://application:,,,/RCS.Theme;component/Controls/ToolTips/Colours.ToolTip.xaml" />
 	</ResourceDictionary.MergedDictionaries>
 
 
@@ -23,7 +23,7 @@
 	<Thickness x:Key="ToolTip.Padding.ContentControl">7,5</Thickness>
 	<Thickness x:Key="ToolTip.BorderThickness">1</Thickness>
 	<system:Boolean x:Key="ToolTip.SnapsToDevicePixels">False</system:Boolean>
-	<FontFamily x:Key="ToolTip.FontFamily">pack://application:,,,/OKB.Assets;component/Assets/Fonts/Inter/Inter.ttf#Inter</FontFamily>
+	<FontFamily x:Key="ToolTip.FontFamily">pack://application:,,,/RCS.Assets;component/Assets/Fonts/Inter/Inter.ttf#Inter</FontFamily>
 	<system:Double x:Key="ToolTip.FontSize">12</system:Double>
 	<FontWeight x:Key="ToolTip.FontWeight">Normal</FontWeight>
 	<HorizontalAlignment x:Key="ToolTip.HorizontalContentAlignment">Left</HorizontalAlignment>

@@ -4,9 +4,9 @@
 >
 	<!--
 	Reference:
-	<ResourceDictionary Source="pack://application:,,,/OKB.Assets;component/Design/Design.Font.xaml" />
+	<ResourceDictionary Source="pack://application:,,,/RCS.Assets;component/Design/Design.Font.xaml" />
 	-->
 	
-	<FontFamily x:Key="Design.Font.Family.Inter">pack://application:,,,/OKB.Assets;component/Assets/Fonts/Inter/Inter.ttf#Inter</FontFamily>
+	<FontFamily x:Key="Design.Font.Family.Inter">pack://application:,,,/RCS.Assets;component/Assets/Fonts/Inter/Inter.ttf#Inter</FontFamily>
 
 </ResourceDictionary>

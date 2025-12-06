@@ -8,13 +8,13 @@
 >
 	<!--
 		Reference:
-		<ResourceDictionary Source="pack://application:,,,/OKB.Theme;component/Controls/SVG/Base.SvgBitmap.xaml" />
+		<ResourceDictionary Source="pack://application:,,,/RCS.Theme;component/Controls/SVG/Base.SvgBitmap.xaml" />
 	-->
 
 	<Style x:Key="Base.Style.SvgBitmap" TargetType="svgc:SvgBitmap" >
 		<Setter Property="Width" Value="15"/>
 		<Setter Property="Height" Value="15"/>
-		<Setter Property="AppName" Value="OKB.Assets"/>
+		<Setter Property="AppName" Value="RCS.Assets"/>
 		<Setter Property="IsHitTestVisible" Value="False"/>
 	</Style>
 	

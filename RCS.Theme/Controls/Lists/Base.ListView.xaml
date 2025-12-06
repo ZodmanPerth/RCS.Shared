@@ -6,8 +6,8 @@
 >
 
 	<ResourceDictionary.MergedDictionaries>
-		<ResourceDictionary Source="pack://application:,,,/OKB.Theme;component/Colours/SystemColours.xaml" />
-		<ResourceDictionary Source="pack://application:,,,/OKB.Theme;component/Controls/ScrollViewer/Base.ScrollViewer.xaml" />
+		<ResourceDictionary Source="pack://application:,,,/RCS.Theme;component/Colours/SystemColours.xaml" />
+		<ResourceDictionary Source="pack://application:,,,/RCS.Theme;component/Controls/ScrollViewer/Base.ScrollViewer.xaml" />
 	</ResourceDictionary.MergedDictionaries>
 
 

@@ -1,7 +1,7 @@
 ﻿<ResourceDictionary
     xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
     xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
-	xmlns:ckControls="clr-namespace:OKB.Controls"
+	xmlns:ckControls="clr-namespace:RCS.Controls"
 >
 	<Style x:Key="Core.Style.TwoItems" TargetType="ckControls:TwoItems">
 

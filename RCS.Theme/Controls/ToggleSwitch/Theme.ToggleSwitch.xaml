@@ -4,16 +4,16 @@
 	xmlns:theme="clr-namespace:Microsoft.Windows.Themes;assembly=PresentationFramework.Aero2"
 	xmlns:ice="http://schemas.microsoft.com/winfx/2006/xaml/presentation/options"
 	xmlns:system="clr-namespace:System;assembly=mscorlib"
-	xmlns:ckControls="clr-namespace:OKB.Controls;assembly=OKB.Controls"
+	xmlns:ckControls="clr-namespace:RCS.Controls;assembly=RCS.Controls"
 >
 	<!--
 		Reference:
-		<ResourceDictionary Source="pack://application:,,,/OKB.Theme;component/Controls/ToggleSwitch/Theme.ToggleSwitch.xaml" />
+		<ResourceDictionary Source="pack://application:,,,/RCS.Theme;component/Controls/ToggleSwitch/Theme.ToggleSwitch.xaml" />
 	-->
 	
 	<ResourceDictionary.MergedDictionaries>
-		<!--<ResourceDictionary Source="pack://application:,,,/OKB.Theme;component/Design/Design.Colours.xaml" />-->
-		<ResourceDictionary Source="pack://application:,,,/OKB.Theme;component/Controls/ToggleSwitch/Base.ToggleSwitch.xaml" />
+		<!--<ResourceDictionary Source="pack://application:,,,/RCS.Theme;component/Design/Design.Colours.xaml" />-->
+		<ResourceDictionary Source="pack://application:,,,/RCS.Theme;component/Controls/ToggleSwitch/Base.ToggleSwitch.xaml" />
 	</ResourceDictionary.MergedDictionaries>
 
 	<Style x:Key="Theme.Style.ToggleSwitch" TargetType="ckControls:ToggleSwitch" BasedOn="{StaticResource Base.Style.ToggleSwitch.Square}" >

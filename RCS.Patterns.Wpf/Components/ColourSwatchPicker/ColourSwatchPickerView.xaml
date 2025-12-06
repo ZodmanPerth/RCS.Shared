@@ -10,11 +10,11 @@
 
 		<ResourceDictionary>
 			<ResourceDictionary.MergedDictionaries>
-				<ResourceDictionary Source="pack://application:,,,/OKB.Theme;component/Controls/Lists/Base.ListBox.xaml" />
-				<ResourceDictionary Source="pack://application:,,,/OKB.Theme;component/Controls/ToolTips/Base.ToolTip.xaml" />
+				<ResourceDictionary Source="pack://application:,,,/RCS.Theme;component/Controls/Lists/Base.ListBox.xaml" />
+				<ResourceDictionary Source="pack://application:,,,/RCS.Theme;component/Controls/ToolTips/Base.ToolTip.xaml" />
 
-				<ResourceDictionary Source="pack://application:,,,/OKB.Theme;component/Design/Design.Colours.xaml" />
-				<ResourceDictionary Source="pack://application:,,,/OKB.Patterns.Wpf;component/Converters/Converters.xaml" />
+				<ResourceDictionary Source="pack://application:,,,/RCS.Theme;component/Design/Design.Colours.xaml" />
+				<ResourceDictionary Source="pack://application:,,,/RCS.Patterns.Wpf;component/Converters/Converters.xaml" />
 			</ResourceDictionary.MergedDictionaries>
 
 			<system:Double x:Key="SwatchSize">24</system:Double>

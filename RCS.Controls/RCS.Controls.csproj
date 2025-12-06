@@ -15,7 +15,7 @@
 
   <ItemGroup>
     <ProjectReference Include="..\..\OKB.Kernal\OKB.Kernal.csproj" />
-    <ProjectReference Include="..\RCS.Assets\OKB.Assets.csproj" />
+    <ProjectReference Include="..\RCS.Assets\RCS.Assets.csproj" />
   </ItemGroup>
 
 </Project>

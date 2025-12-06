@@ -4,12 +4,12 @@
 >
 	<!--
 		Reference:
-		<ResourceDictionary Source="pack://application:,,,/OKB.Theme;component/Controls/TextBlocks/Base.TextBlock.xaml" />
+		<ResourceDictionary Source="pack://application:,,,/RCS.Theme;component/Controls/TextBlocks/Base.TextBlock.xaml" />
 	-->
 	
 	<ResourceDictionary.MergedDictionaries>
-		<ResourceDictionary Source="pack://application:,,,/OKB.Theme;component/Design/Design.Brushes.xaml" />
-		<ResourceDictionary Source="pack://application:,,,/OKB.Assets;component/Design/Design.Font.xaml" />
+		<ResourceDictionary Source="pack://application:,,,/RCS.Theme;component/Design/Design.Brushes.xaml" />
+		<ResourceDictionary Source="pack://application:,,,/RCS.Assets;component/Design/Design.Font.xaml" />
 	</ResourceDictionary.MergedDictionaries>
 
 

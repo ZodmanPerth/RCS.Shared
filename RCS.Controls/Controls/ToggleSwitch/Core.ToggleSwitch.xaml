@@ -4,15 +4,15 @@
 	xmlns:ice="http://schemas.microsoft.com/winfx/2006/xaml/presentation/options"
 	xmlns:theme="clr-namespace:Microsoft.Windows.Themes;assembly=PresentationFramework.Aero2"
 	xmlns:system="clr-namespace:System;assembly=mscorlib"
-	xmlns:ckControls="clr-namespace:OKB.Controls"
+	xmlns:ckControls="clr-namespace:RCS.Controls"
 >
 	<!--
 		Reference:
-		<ResourceDictionary Source="pack://application:,,,/OKB.Controls;component/Controls/ToggleSwitch/Core.ToggleSwitch.xaml" />
+		<ResourceDictionary Source="pack://application:,,,/RCS.Controls;component/Controls/ToggleSwitch/Core.ToggleSwitch.xaml" />
 	-->
 
 	<ResourceDictionary.MergedDictionaries>
-		<ResourceDictionary Source="pack://application:,,,/OKB.Controls;component/Controls/ToggleSwitch/Colours.ToggleSwitch.xaml" />
+		<ResourceDictionary Source="pack://application:,,,/RCS.Controls;component/Controls/ToggleSwitch/Colours.ToggleSwitch.xaml" />
 	</ResourceDictionary.MergedDictionaries>
 
 
@@ -45,7 +45,7 @@
 	<Thickness x:Key="ToggleSwitch.Content.Margin">5,0,0,0</Thickness>
 
 
-	<FontFamily x:Key="ToggleSwitch.FontFamily">pack://application:,,,/OKB.Assets;component/Assets/Fonts/Inter/Inter.ttf#Inter</FontFamily>
+	<FontFamily x:Key="ToggleSwitch.FontFamily">pack://application:,,,/RCS.Assets;component/Assets/Fonts/Inter/Inter.ttf#Inter</FontFamily>
 	<FontWeight x:Key="ToggleSwitch.FontWeight">Normal</FontWeight>
 	<system:Double x:Key="ToggleSwitch.FontSize">12</system:Double>
 

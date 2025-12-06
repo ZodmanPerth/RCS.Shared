@@ -5,7 +5,7 @@
 >
 	<!--
 		Reference:
-		<ResourceDictionary Source="pack://application:,,,/OKB.Theme;component/Design/Design.Colours.xaml" />
+		<ResourceDictionary Source="pack://application:,,,/RCS.Theme;component/Design/Design.Colours.xaml" />
 	-->
 	
 	<Color x:Key="Design.Colour.White"						ice:Freeze="true" >#FFFFFF</Color>

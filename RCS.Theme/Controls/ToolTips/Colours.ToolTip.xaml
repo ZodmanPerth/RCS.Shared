@@ -4,7 +4,7 @@
 >
 	<!--
 		Reference:
-		<ResourceDictionary Source="pack://application:,,,/OKB.Theme;component/Controls/ToolTips/Colours.ToolTip.xaml" />
+		<ResourceDictionary Source="pack://application:,,,/RCS.Theme;component/Controls/ToolTips/Colours.ToolTip.xaml" />
 	-->
 	
 	<!--Core colours from aero2-->

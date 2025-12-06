@@ -3,7 +3,7 @@ using System.Windows.Controls;
 
 #nullable disable
 
-namespace OKB.Controls;
+namespace RCS.Controls;
 
 public partial class TwoItems : Control
 {

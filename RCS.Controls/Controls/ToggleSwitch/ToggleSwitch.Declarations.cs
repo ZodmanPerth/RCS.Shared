@@ -1,7 +1,7 @@
 ﻿using System.Windows;
 using System.Windows.Controls;
 
-namespace OKB.Controls;
+namespace RCS.Controls;
 
 public partial class ToggleSwitch : CheckBox
 {

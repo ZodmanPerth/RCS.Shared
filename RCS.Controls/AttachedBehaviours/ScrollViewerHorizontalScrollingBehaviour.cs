@@ -5,7 +5,7 @@ using System.Windows.Input;
 using System.Windows.Interop;
 using System.Windows.Media;
 
-namespace OKB.Controls.Behaviours;
+namespace RCS.Controls.Behaviours;
 
 /// <summary>Adds horizontal scroll behaviour using SHIFT + MOUSEWHEEL and WM_MOUSEHWHEEL events (e.g. from a dial)</summary>
 public class ScrollViewerHorizontalScrollingBehaviour : Behavior<ScrollViewer>

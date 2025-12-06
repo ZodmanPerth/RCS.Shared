@@ -5,11 +5,11 @@
 >
 	<!--
 		Reference:
-		<ResourceDictionary Source="pack://application:,,,/OKB.Theme;component/Design/Design.Brushes.xaml" />
+		<ResourceDictionary Source="pack://application:,,,/RCS.Theme;component/Design/Design.Brushes.xaml" />
 	-->
 	
 	<ResourceDictionary.MergedDictionaries>
-		<ResourceDictionary Source="pack://application:,,,/OKB.Theme;component/Design/Design.Colours.xaml" />
+		<ResourceDictionary Source="pack://application:,,,/RCS.Theme;component/Design/Design.Colours.xaml" />
 	</ResourceDictionary.MergedDictionaries>
 
 	<SolidColorBrush x:Key="Design.Brush.White"						Color="{StaticResource Design.Colour.White}"					ice:Freeze="true" />

@@ -4,7 +4,7 @@
 >
 	<!--
 		Reference:
-		<ResourceDictionary Source="pack://application:,,,/OKB.Theme;component/Controls/ScrollViewer/Colours.ScrollViewer.xaml" />
+		<ResourceDictionary Source="pack://application:,,,/RCS.Theme;component/Controls/ScrollViewer/Colours.ScrollViewer.xaml" />
 	-->
 
 	<!--Core colours from aero2-->

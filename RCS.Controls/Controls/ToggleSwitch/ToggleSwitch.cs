@@ -2,7 +2,7 @@
 using System.Windows.Controls;
 using System.Windows.Media.Animation;
 
-namespace OKB.Controls;
+namespace RCS.Controls;
 
 [TemplatePart(Name = PartLever, Type = typeof(FrameworkElement))]
 public partial class ToggleSwitch : CheckBox
