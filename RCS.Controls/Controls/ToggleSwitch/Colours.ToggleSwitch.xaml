@@ -1,0 +1,28 @@
+﻿<ResourceDictionary
+	xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+	xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+>
+	<!--
+		Reference:
+		<ResourceDictionary Source="pack://application:,,,/OKB.Controls;component/Controls/ToggleSwitch/Colours.ToggleSwitch.xaml" />
+	-->
+	
+	<Color x:Key="Colour.ToggleSwitch.Foreground">Black</Color>
+	<Color x:Key="Colour.ToggleSwitch.Foreground.Disabled">#FF838383</Color>
+
+	<Color x:Key="Colour.ToggleSwitch.Background">Transparent</Color>
+	<Color x:Key="Colour.ToggleSwitch.Background.Disabled">#FFF4F4F4</Color>
+
+	<Color x:Key="Colour.ToggleSwitch.Housing.Background.Off">White</Color>
+	<Color x:Key="Colour.ToggleSwitch.Housing.Background.On">#5B72C2</Color>
+	<Color x:Key="Colour.ToggleSwitch.Housing.Background.Disabled">#FFF4F4F4</Color>
+
+	<Color x:Key="Colour.ToggleSwitch.Housing.Border.Off">#333333</Color>
+	<Color x:Key="Colour.ToggleSwitch.Housing.Border.On">#5B72C2</Color>
+	<Color x:Key="Colour.ToggleSwitch.Housing.Border.Disabled">#FFADB2B5</Color>
+
+	<Color x:Key="Colour.ToggleSwitch.Lever.Off">#333333</Color>
+	<Color x:Key="Colour.ToggleSwitch.Lever.On">White</Color>
+	<Color x:Key="Colour.ToggleSwitch.Lever.Disabled">#FFADB2B5</Color>
+	
+</ResourceDictionary>

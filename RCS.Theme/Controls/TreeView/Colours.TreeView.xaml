@@ -1,0 +1,39 @@
+﻿<ResourceDictionary
+	xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+	xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+>
+	<!--
+		Reference:
+		<ResourceDictionary Source="pack://application:,,,/OKB.Theme;component/Controls/Lists/Colours.ListBox.xaml" />
+	-->
+
+	<!--colours from aero2.dll-->
+
+	<Color x:Key="Colour.TreeViewItem.ToggleButton.Background">Transparent</Color>
+	<Color x:Key="Colour.TreeViewItem.ToggleButton.Stroke">#FF818181</Color>
+	<Color x:Key="Colour.TreeViewItem.ToggleButton.Hover.Background">#FFCCEEFB</Color>
+	<Color x:Key="Colour.TreeViewItem.ToggleButton.Hover.Stroke">#FF27C7F7</Color>
+	<Color x:Key="Colour.TreeViewItem.ToggleButton.Checked.Background">#FF595959</Color>
+	<Color x:Key="Colour.TreeViewItem.ToggleButton.Checked.Stroke">#FF262626</Color>
+	<Color x:Key="Colour.TreeViewItem.ToggleButton.Hover.Checked.Background">#FF82DFFB</Color>
+	<Color x:Key="Colour.TreeViewItem.ToggleButton.Hover.Checked.Stroke">#FF1CC4F7</Color>
+
+	<Color x:Key="Colour.TreeView.Foreground">Black</Color>
+	<Color x:Key="Colour.TreeView.Background">Transparent</Color>
+	<Color x:Key="Colour.TreeView.Background.Disabled">#F0F0F0</Color>
+	<Color x:Key="Colour.TreeView.Border">#828790</Color>
+
+	<Color x:Key="Colour.TreeViewItem.Foreground">Black</Color>
+	<Color x:Key="Colour.TreeViewItem.Foreground.Hover">Black</Color>
+	<Color x:Key="Colour.TreeViewItem.Foreground.Selected">Black</Color>
+	<Color x:Key="Colour.TreeViewItem.Foreground.Selected.Inactive">Black</Color>
+	<Color x:Key="Colour.TreeViewItem.Foreground.Highlighted">Black</Color>
+	<Color x:Key="Colour.TreeViewItem.Foreground.Disabled">#F0F0F0</Color>
+	<Color x:Key="Colour.TreeViewItem.Background">Transparent</Color>
+	<Color x:Key="Colour.TreeViewItem.Background.Hover">#FF82DFFB</Color>
+	<Color x:Key="Colour.TreeViewItem.Background.Selected">#FF82DFFB</Color>
+	<Color x:Key="Colour.TreeViewItem.Background.Selected.Inactive">#FFCCEEFB</Color>
+	<Color x:Key="Colour.TreeViewItem.Background.Highlighted">#FCFCB7</Color>
+	<Color x:Key="Colour.TreeViewItem.Border">Transparent</Color>
+
+</ResourceDictionary>

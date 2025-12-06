@@ -1,0 +1,18 @@
+﻿<ResourceDictionary
+    xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+    xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+	xmlns:ice="http://schemas.microsoft.com/winfx/2006/xaml/presentation/options"
+>
+	<!--
+		Reference:
+		<ResourceDictionary Source="pack://application:,,,/OKB.Theme;component/Design/Design.Colours.xaml" />
+	-->
+	
+	<Color x:Key="Design.Colour.White"						ice:Freeze="true" >#FFFFFF</Color>
+	<Color x:Key="Design.Colour.Black"						ice:Freeze="true" >#000000</Color>
+	
+	<Color x:Key="Design.Colour.Hyperlink.Blue"				ice:Freeze="true" >#3D6AFF</Color>
+
+	<Color x:Key="Design.Colour.OKB.Green"					ice:Freeze="true" >#4ECA45</Color>
+	
+</ResourceDictionary>

@@ -1,0 +1,12 @@
+﻿<ResourceDictionary
+	xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+	xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+>
+	<!--
+	Reference:
+	<ResourceDictionary Source="pack://application:,,,/OKB.Assets;component/Design/Design.Font.xaml" />
+	-->
+	
+	<FontFamily x:Key="Design.Font.Family.Inter">pack://application:,,,/OKB.Assets;component/Assets/Fonts/Inter/Inter.ttf#Inter</FontFamily>
+
+</ResourceDictionary>

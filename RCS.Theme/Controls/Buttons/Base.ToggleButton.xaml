@@ -1,0 +1,264 @@
+﻿<ResourceDictionary
+	xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+	xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+	xmlns:ice="http://schemas.microsoft.com/winfx/2006/xaml/presentation/options"
+	xmlns:system="clr-namespace:System;assembly=mscorlib"
+>
+	<!--
+		Reference:
+		<ResourceDictionary Source="pack://application:,,,/OKB.Theme;component/Controls/Buttons/Base.ToggleButton.xaml" />
+	-->
+
+	<ResourceDictionary.MergedDictionaries>
+		<ResourceDictionary Source="pack://application:,,,/OKB.Theme;component/Colours/SystemColours.xaml" />
+		<ResourceDictionary Source="pack://application:,,,/OKB.Theme;component/Controls/Buttons/Colours.ToggleButton.xaml" />
+	</ResourceDictionary.MergedDictionaries>
+
+
+
+
+	<!--Base references-->
+
+
+	<HorizontalAlignment x:Key="Button.HorizontalAlignment">Center</HorizontalAlignment>
+	
+	<VerticalAlignment x:Key="Button.VerticalAlignment">Center</VerticalAlignment>
+
+	<Thickness x:Key="Button.Margin">0</Thickness>
+
+	<Thickness x:Key="Button.Padding">1</Thickness>
+	
+	<Thickness x:Key="Button.BorderThickness">1</Thickness>
+	<Thickness x:Key="Button.BorderThickness.Hover">1</Thickness>
+	<Thickness x:Key="Button.BorderThickness.Pressed">1</Thickness>
+	<Thickness x:Key="Button.BorderThickness.Disabled">1</Thickness>
+	
+	
+	<CornerRadius x:Key="Button.CornerRadius">1</CornerRadius>
+	<CornerRadius x:Key="Button.CornerRadius.Hover">1</CornerRadius>
+	<CornerRadius x:Key="Button.CornerRadius.Pressed">1</CornerRadius>
+	<CornerRadius x:Key="Button.CornerRadius.Disabled">1</CornerRadius>
+
+	
+	<FontFamily x:Key="Button.FontFamily">pack://application:,,,/OKB.Assets;component/Assets/Fonts/Inter/Inter.ttf#Inter</FontFamily>
+	<FontFamily x:Key="Button.FontFamily.Hover">pack://application:,,,/OKB.Assets;component/Assets/Fonts/Inter/Inter.ttf#Inter</FontFamily>
+	<FontFamily x:Key="Button.FontFamily.Pressed">pack://application:,,,/OKB.Assets;component/Assets/Fonts/Inter/Inter.ttf#Inter</FontFamily>
+	<FontFamily x:Key="Button.FontFamily.Disabled">pack://application:,,,/OKB.Assets;component/Assets/Fonts/Inter/Inter.ttf#Inter</FontFamily>
+	
+	<system:Double x:Key="Button.FontSize">12</system:Double>
+	<system:Double x:Key="Button.FontSize.Hover">12</system:Double>
+	<system:Double x:Key="Button.FontSize.Pressed">12</system:Double>
+	<system:Double x:Key="Button.FontSize.Disabled">12</system:Double>
+	
+	<FontWeight x:Key="Button.FontWeight">Normal</FontWeight>
+	<FontWeight x:Key="Button.FontWeight.Hover">Normal</FontWeight>
+	<FontWeight x:Key="Button.FontWeight.Pressed">Normal</FontWeight>
+	<FontWeight x:Key="Button.FontWeight.Disabled">Normal</FontWeight>
+
+
+	<HorizontalAlignment x:Key="Button.HorizontalContentAlignment">Center</HorizontalAlignment>
+	<HorizontalAlignment x:Key="Button.HorizontalContentAlignment.Hover">Center</HorizontalAlignment>
+	<HorizontalAlignment x:Key="Button.HorizontalContentAlignment.Pressed">Center</HorizontalAlignment>
+	<HorizontalAlignment x:Key="Button.HorizontalContentAlignment.Disabled">Center</HorizontalAlignment>
+
+	<VerticalAlignment x:Key="Button.VerticalContentAlignment">Center</VerticalAlignment>
+	<VerticalAlignment x:Key="Button.VerticalContentAlignment.Hover">Center</VerticalAlignment>
+	<VerticalAlignment x:Key="Button.VerticalContentAlignment.Pressed">Center</VerticalAlignment>
+	<VerticalAlignment x:Key="Button.VerticalContentAlignment.Disabled">Center</VerticalAlignment>
+
+	<Thickness x:Key="Button.Content.Margin">5,4,5,2</Thickness>
+
+	
+	<SolidColorBrush x:Key="Brush.ToggleButton.FocusVisual.Border"	Color="{StaticResource SystemColours.ControlTextBrush}"				ice:Freeze="true" />
+
+	<SolidColorBrush x:Key="Brush.ToggleButton.Foreground"			Color="{StaticResource SystemColours.ControlTextBrush}"				ice:Freeze="true" />
+	<SolidColorBrush x:Key="Brush.ToggleButton.Foreground.Hover"	Color="{StaticResource SystemColours.ControlTextBrush}"				ice:Freeze="true" />
+	<SolidColorBrush x:Key="Brush.ToggleButton.Foreground.Pressed"	Color="{StaticResource SystemColours.ControlTextBrush}"				ice:Freeze="true" />
+	<SolidColorBrush x:Key="Brush.ToggleButton.Foreground.Disabled"	Color="{StaticResource Colour.ToggleButton.Foreground.Disabled}"	ice:Freeze="true" />
+
+	<SolidColorBrush x:Key="Brush.ToggleButton.Background"			Color="{StaticResource Colour.ToggleButton.Background}"				ice:Freeze="true" />
+	<SolidColorBrush x:Key="Brush.ToggleButton.Background.Hover"	Color="{StaticResource Colour.ToggleButton.Background.Hover}"		ice:Freeze="true" />
+	<SolidColorBrush x:Key="Brush.ToggleButton.Background.Pressed"	Color="{StaticResource Colour.ToggleButton.Background.Pressed}"		ice:Freeze="true" />
+	<SolidColorBrush x:Key="Brush.ToggleButton.Background.Disabled"	Color="{StaticResource Colour.ToggleButton.Background.Disabled}"	ice:Freeze="true" />
+	
+	<SolidColorBrush x:Key="Brush.ToggleButton.Border"				Color="{StaticResource Colour.ToggleButton.Border}"					ice:Freeze="true" />
+	<SolidColorBrush x:Key="Brush.ToggleButton.Border.Hover"		Color="{StaticResource Colour.ToggleButton.Border.Hover}"			ice:Freeze="true" />
+	<SolidColorBrush x:Key="Brush.ToggleButton.Border.Pressed"		Color="{StaticResource Colour.ToggleButton.Border.Pressed}"			ice:Freeze="true" />
+	<SolidColorBrush x:Key="Brush.ToggleButton.Border.Disabled"		Color="{StaticResource Colour.ToggleButton.Border.Disabled}"		ice:Freeze="true" />
+
+
+	<!--FocusVisual-->
+
+	<ControlTemplate x:Key="Base.ControlTemplate.ToggleButton.FocusVisual" >
+		<Rectangle
+			Margin="2"
+            StrokeThickness="1"
+            Stroke="{DynamicResource Brush.ToggleButton.FocusVisual.Border}"
+            StrokeDashArray="1 2"
+            SnapsToDevicePixels="true"
+		/>
+	</ControlTemplate>
+
+	<Style x:Key="Base.Style.ToggleButton.FocusVisual">
+		<Setter Property="Control.Template" Value="{DynamicResource Base.ControlTemplate.ToggleButton.FocusVisual}" />
+	</Style>
+
+
+
+	<!--Button-->
+
+	<ControlTemplate x:Key="Base.ControlTemplate.ToggleButton" TargetType="ToggleButton" >
+		<Grid
+			x:Name="root"
+			Margin="{TemplateBinding Margin}"
+		>
+			<Border 
+				x:Name="background"
+				Padding="{DynamicResource Button.Padding}"
+				BorderThickness="0"
+				CornerRadius="{DynamicResource Button.CornerRadius}"
+				Background="{TemplateBinding Background}"
+			/>
+			<Border 
+				x:Name="border"
+				Padding="{TemplateBinding Padding}"
+				CornerRadius="{DynamicResource Button.CornerRadius}"
+				BorderBrush="{TemplateBinding BorderBrush}"
+				BorderThickness="{TemplateBinding Button.BorderThickness}"
+			>
+				<ContentPresenter
+					x:Name="cp"
+					HorizontalAlignment="{TemplateBinding HorizontalContentAlignment}"
+					VerticalAlignment="{TemplateBinding VerticalContentAlignment}"
+					Margin="{DynamicResource Button.Content.Margin}"
+					TextElement.FontFamily="{TemplateBinding FontFamily}"
+					TextElement.FontSize="{TemplateBinding FontSize}"
+					TextElement.FontWeight="{TemplateBinding FontWeight}"
+					TextElement.Foreground="{TemplateBinding Foreground}"
+				/>
+			</Border>
+		</Grid>
+		<ControlTemplate.Triggers>
+			<Trigger Property="IsMouseOver" Value="True">
+				<Setter Property="Background" TargetName="background" Value="{DynamicResource Brush.ToggleButton.Background.Hover}"/>
+				<Setter Property="BorderBrush" TargetName="border" Value="{DynamicResource Brush.ToggleButton.Border.Hover}"/>
+				<Setter Property="BorderThickness" TargetName="border" Value="{DynamicResource Button.BorderThickness.Hover}"/>
+
+				<Setter Property="HorizontalAlignment" TargetName="cp" Value="{DynamicResource Button.HorizontalContentAlignment.Hover}"/>
+				<Setter Property="VerticalAlignment" TargetName="cp" Value="{DynamicResource Button.VerticalContentAlignment.Hover}"/>
+				<Setter Property="Margin" TargetName="cp" Value="{DynamicResource Button.Content.Margin.Hover}"/>
+				<Setter Property="TextElement.Foreground" TargetName="cp" Value="{DynamicResource Brush.ToggleButton.Foreground.Hover}"/>
+				<Setter Property="TextElement.FontFamily" TargetName="cp" Value="{DynamicResource Button.FontFamily.Hover}"/>
+				<Setter Property="TextElement.FontSize" TargetName="cp" Value="{DynamicResource Button.FontSize.Hover}"/>
+				<Setter Property="TextElement.FontWeight" TargetName="cp" Value="{DynamicResource Button.FontWeight.Hover}"/>
+			</Trigger>
+			<Trigger Property="IsPressed" Value="True">
+				<Setter Property="Background" TargetName="background" Value="{DynamicResource Brush.ToggleButton.Background.Pressed}"/>
+				<Setter Property="BorderBrush" TargetName="border" Value="{DynamicResource Brush.ToggleButton.Border.Pressed}"/>
+				<Setter Property="BorderThickness" TargetName="border" Value="{DynamicResource Button.BorderThickness.Pressed}"/>
+
+				<Setter Property="HorizontalAlignment" TargetName="cp" Value="{DynamicResource Button.HorizontalContentAlignment.Pressed}"/>
+				<Setter Property="VerticalAlignment" TargetName="cp" Value="{DynamicResource Button.VerticalContentAlignment.Pressed}"/>
+				<Setter Property="Margin" TargetName="cp" Value="{DynamicResource Button.Content.Margin.Pressed}"/>
+				<Setter Property="TextElement.Foreground" TargetName="cp" Value="{DynamicResource Brush.ToggleButton.Foreground.Pressed}"/>
+				<Setter Property="TextElement.FontFamily" TargetName="cp" Value="{DynamicResource Button.FontFamily.Pressed}"/>
+				<Setter Property="TextElement.FontSize" TargetName="cp" Value="{DynamicResource Button.FontSize.Pressed}"/>
+				<Setter Property="TextElement.FontWeight" TargetName="cp" Value="{DynamicResource Button.FontWeight.Pressed}"/>
+			</Trigger>
+			<!--Hacked in from ILSpy on PresentationFremework.Aero2.dll-->
+			<Trigger Property="IsChecked" Value="True">
+				<Setter Property="Background" TargetName="background" Value="{DynamicResource Brush.ToggleButton.Background.Pressed}"/>
+				<Setter Property="BorderBrush" TargetName="border" Value="{DynamicResource Brush.ToggleButton.Border.Pressed}"/>
+				<Setter Property="BorderThickness" TargetName="border" Value="{DynamicResource Button.BorderThickness.Pressed}"/>
+
+				<Setter Property="HorizontalAlignment" TargetName="cp" Value="{DynamicResource Button.HorizontalContentAlignment.Pressed}"/>
+				<Setter Property="VerticalAlignment" TargetName="cp" Value="{DynamicResource Button.VerticalContentAlignment.Pressed}"/>
+				<Setter Property="Margin" TargetName="cp" Value="{DynamicResource Button.Content.Margin.Pressed}"/>
+				<Setter Property="TextElement.Foreground" TargetName="cp" Value="{DynamicResource Brush.ToggleButton.Foreground.Pressed}"/>
+				<Setter Property="TextElement.FontFamily" TargetName="cp" Value="{DynamicResource Button.FontFamily.Pressed}"/>
+				<Setter Property="TextElement.FontSize" TargetName="cp" Value="{DynamicResource Button.FontSize.Pressed}"/>
+				<Setter Property="TextElement.FontWeight" TargetName="cp" Value="{DynamicResource Button.FontWeight.Pressed}"/>
+			</Trigger>
+			<!--Multitriggers added manually-->
+			<MultiTrigger>
+				<MultiTrigger.Conditions>
+					<Condition Property="IsChecked" Value="True"/>
+					<Condition Property="IsMouseOver" Value="True"/>
+				</MultiTrigger.Conditions>
+				<Setter Property="Background" TargetName="background" Value="{DynamicResource Brush.ToggleButton.Background.Hover}"/>
+				<Setter Property="BorderBrush" TargetName="border" Value="{DynamicResource Brush.ToggleButton.Border.Hover}"/>
+				<Setter Property="BorderThickness" TargetName="border" Value="{DynamicResource Button.BorderThickness.Hover}"/>
+
+				<Setter Property="HorizontalAlignment" TargetName="cp" Value="{DynamicResource Button.HorizontalContentAlignment.Hover}"/>
+				<Setter Property="VerticalAlignment" TargetName="cp" Value="{DynamicResource Button.VerticalContentAlignment.Hover}"/>
+				<Setter Property="Margin" TargetName="cp" Value="{DynamicResource Button.Content.Margin.Hover}"/>
+				<Setter Property="TextElement.Foreground" TargetName="cp" Value="{DynamicResource Brush.ToggleButton.Foreground.Hover}"/>
+				<Setter Property="TextElement.FontFamily" TargetName="cp" Value="{DynamicResource Button.FontFamily.Hover}"/>
+				<Setter Property="TextElement.FontSize" TargetName="cp" Value="{DynamicResource Button.FontSize.Hover}"/>
+				<Setter Property="TextElement.FontWeight" TargetName="cp" Value="{DynamicResource Button.FontWeight.Hover}"/>
+			</MultiTrigger>
+			<MultiTrigger>
+				<MultiTrigger.Conditions>
+					<Condition Property="IsChecked" Value="True"/>
+					<Condition Property="IsPressed" Value="True"/>
+				</MultiTrigger.Conditions>
+				<Setter Property="Background" TargetName="background" Value="{DynamicResource Brush.ToggleButton.Background.Pressed}"/>
+				<Setter Property="BorderBrush" TargetName="border" Value="{DynamicResource Brush.ToggleButton.Border.Pressed}"/>
+				<Setter Property="BorderThickness" TargetName="border" Value="{DynamicResource Button.BorderThickness.Pressed}"/>
+
+				<Setter Property="HorizontalAlignment" TargetName="cp" Value="{DynamicResource Button.HorizontalContentAlignment.Pressed}"/>
+				<Setter Property="VerticalAlignment" TargetName="cp" Value="{DynamicResource Button.VerticalContentAlignment.Pressed}"/>
+				<Setter Property="Margin" TargetName="cp" Value="{DynamicResource Button.Content.Margin.Pressed}"/>
+				<Setter Property="TextElement.Foreground" TargetName="cp" Value="{DynamicResource Brush.ToggleButton.Foreground.Pressed}"/>
+				<Setter Property="TextElement.FontFamily" TargetName="cp" Value="{DynamicResource Button.FontFamily.Pressed}"/>
+				<Setter Property="TextElement.FontSize" TargetName="cp" Value="{DynamicResource Button.FontSize.Pressed}"/>
+				<Setter Property="TextElement.FontWeight" TargetName="cp" Value="{DynamicResource Button.FontWeight.Pressed}"/>
+			</MultiTrigger>
+			<Trigger Property="IsEnabled" Value="False">
+				<Setter Property="Background" TargetName="background" Value="{DynamicResource Brush.ToggleButton.Background.Disabled}"/>
+				<Setter Property="BorderBrush" TargetName="border" Value="{DynamicResource Brush.ToggleButton.Border.Disabled}"/>
+				<Setter Property="BorderThickness" TargetName="border" Value="{DynamicResource Button.BorderThickness.Disabled}"/>
+
+				<Setter Property="HorizontalAlignment" TargetName="cp" Value="{DynamicResource Button.HorizontalContentAlignment.Disabled}"/>
+				<Setter Property="VerticalAlignment" TargetName="cp" Value="{DynamicResource Button.VerticalContentAlignment.Disabled}"/>
+				<Setter Property="Margin" TargetName="cp" Value="{DynamicResource Button.Content.Margin.Disabled}"/>
+				<Setter Property="TextElement.Foreground" TargetName="cp" Value="{DynamicResource Brush.ToggleButton.Foreground.Disabled}"/>
+				<Setter Property="TextElement.FontFamily" TargetName="cp" Value="{DynamicResource Button.FontFamily.Disabled}"/>
+				<Setter Property="TextElement.FontSize" TargetName="cp" Value="{DynamicResource Button.FontSize.Disabled}"/>
+				<Setter Property="TextElement.FontWeight" TargetName="cp" Value="{DynamicResource Button.FontWeight.Disabled}"/>
+			</Trigger>
+		</ControlTemplate.Triggers>
+	</ControlTemplate>
+
+	<Style x:Key="Base.Style.ToggleButton" TargetType="ToggleButton" >
+		<Setter Property="HorizontalAlignment" Value="{DynamicResource Button.HorizontalAlignment}" />
+		<Setter Property="VerticalAlignment" Value="{DynamicResource Button.VerticalAlignment}" />
+		<Setter Property="Margin" Value="{DynamicResource Button.Margin}" />
+		<Setter Property="Padding" Value="{DynamicResource Button.Padding}" />
+		<Setter Property="FocusVisualStyle" Value="{DynamicResource Base.Style.ToggleButton.FocusVisual}" />
+		<Setter Property="Foreground" Value="{DynamicResource Brush.ToggleButton.Foreground}" />
+		<Setter Property="Background" Value="{DynamicResource Brush.ToggleButton.Background}" />
+		<Setter Property="BorderBrush" Value="{DynamicResource Brush.ToggleButton.Border}" />
+		<Setter Property="BorderThickness" Value="{DynamicResource Button.BorderThickness}" />
+		<Setter Property="HorizontalContentAlignment" Value="{DynamicResource Button.HorizontalContentAlignment}" />
+		<Setter Property="VerticalContentAlignment" Value="{DynamicResource Button.VerticalContentAlignment}" />
+		<Setter Property="FontFamily" Value="{DynamicResource Button.FontFamily}" />
+		<Setter Property="FontSize" Value="{DynamicResource Button.FontSize}" />
+		<Setter Property="FontWeight" Value="{DynamicResource Button.FontWeight}" />
+		<Setter Property="Control.Template" Value="{DynamicResource Base.ControlTemplate.ToggleButton}" />
+		<Setter Property="SnapsToDevicePixels" Value="True" />
+	</Style>
+
+	<Style x:Key="Base.Style.ToggleButton.Trim" TargetType="ToggleButton" BasedOn="{StaticResource Base.Style.ToggleButton}" >
+		<Style.Resources>
+			<Thickness x:Key="Button.Margin">0</Thickness>
+			<Thickness x:Key="Button.Padding">2</Thickness>
+
+			<Thickness x:Key="Button.Content.Margin">0</Thickness>
+			<Thickness x:Key="Button.Content.Margin.Hover">0</Thickness>
+			<Thickness x:Key="Button.Content.Margin.Pressed">0</Thickness>
+			<Thickness x:Key="Button.Content.Margin.Disabled">0</Thickness>
+		</Style.Resources>
+	</Style>
+
+</ResourceDictionary>

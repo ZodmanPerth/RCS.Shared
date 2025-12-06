@@ -9,14 +9,13 @@
   </PropertyGroup>
 
   <ItemGroup>
-    <PackageReference Include="CommunityToolkit.Mvvm" />
-    <PackageReference Include="Microsoft.WindowsAppSDK" />
     <PackageReference Include="SharpVectors.Wpf" />
-    <PackageReference Include="System.Reactive" />
   </ItemGroup>
 
   <ItemGroup>
-    <ProjectReference Include="..\RCS.Patterns.Core\OKB.Patterns.Core.csproj" />
+    <ProjectReference Include="..\RCS.Assets\OKB.Assets.csproj" />
+    <ProjectReference Include="..\RCS.Controls\OKB.Controls.csproj" />
+    <ProjectReference Include="..\RCS.Patterns.Wpf\OKB.Patterns.Wpf.csproj" />
   </ItemGroup>
 
 </Project>

@@ -1,0 +1,394 @@
+﻿<ResourceDictionary
+    xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+    xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+	xmlns:ice="http://schemas.microsoft.com/winfx/2006/xaml/presentation/options"
+	xmlns:system="clr-namespace:System;assembly=mscorlib"
+>
+	<!--
+		Reference:
+		<ResourceDictionary Source="pack://application:,,,/OKB.Theme;component/Controls/TreeView/Base.TreeView.xaml" />
+	-->
+	
+	<!--
+		NOTE:
+		Use the following attached properties to simply bind TreeView to hierarchical data model item sources:
+		
+		xmlns:thap="clr-namespace:OKB.Theme.AttachedProperties;assembly=OKB.Theme"
+		...
+		thap:TreeViewHierarchyAttachedProperties.DisplayPath="SourceName"
+		thap:TreeViewHierarchyAttachedProperties.ChildrenPath="Children"
+	-->
+
+	<ResourceDictionary.MergedDictionaries>
+		<ResourceDictionary Source="pack://application:,,,/OKB.Theme;component/Controls/TreeView/Colours.TreeView.xaml" />
+		<ResourceDictionary Source="pack://application:,,,/OKB.Theme;component/Controls/ScrollViewer/Base.ScrollViewer.xaml" />
+	</ResourceDictionary.MergedDictionaries>
+
+
+	
+	<!--Base references-->
+
+	
+	<system:Double x:Key="TreeViewItem.ToggleButton.Width">16</system:Double>
+	<system:Double x:Key="TreeViewItem.ToggleButton.Height">16</system:Double>
+	<system:Boolean x:Key="TreeView.ToggleButton.ScrollViewer.Focusable">False</system:Boolean>
+	<Thickness x:Key="TreeViewItem.ToggleButton.Margin">0</Thickness>
+	<Thickness x:Key="TreeViewItem.ToggleButton.Margin.Checked">0</Thickness>
+	<Thickness x:Key="TreeViewItem.ToggleButton.Padding">4,5</Thickness>
+	<Thickness x:Key="TreeViewItem.ToggleButton.Padding.Checked">5</Thickness>
+	<system:Double x:Key="TreeViewItem.ToggleButton.RotateTransform.Angle">135</system:Double>
+	<system:Double x:Key="TreeViewItem.ToggleButton.RotateTransform.Angle.Checked">180</system:Double>
+	<system:Double x:Key="TreeViewItem.ToggleButton.RotateTransform.Center.X">3</system:Double>
+	<system:Double x:Key="TreeViewItem.ToggleButton.RotateTransform.Center.X.Checked">3</system:Double>
+	<system:Double x:Key="TreeViewItem.ToggleButton.RotateTransform.Center.Y">3</system:Double>
+	<system:Double x:Key="TreeViewItem.ToggleButton.RotateTransform.Center.Y.Checked">3</system:Double>
+
+	<Thickness x:Key="TreeViewItem.Margin">0</Thickness>
+	<Thickness x:Key="TreeViewItem.Padding">1,2,0,0</Thickness>
+	<Thickness x:Key="TreeViewItem.BorderThickness">0</Thickness>
+	<system:Boolean x:Key="TreeViewItem.SnapsToDevicePixels">True</system:Boolean>
+	<FontFamily x:Key="TreeViewItem.FontFamily">pack://application:,,,/OKB.Assets;component/Assets/Fonts/Inter/Inter.ttf#Inter</FontFamily>
+	<system:Double x:Key="TreeViewItem.FontSize">12</system:Double>
+	<FontWeight x:Key="TreeViewItem.FontWeight">Normal</FontWeight>
+
+	<Thickness x:Key="TreeView.Margin">0</Thickness>
+	<Thickness x:Key="TreeView.Padding">0,2,2,2</Thickness>
+	<Thickness x:Key="TreeView.BorderThickness">1</Thickness>
+	<ScrollBarVisibility x:Key="TreeView.ScrollViewer.HorizontalScrollBarVisibility">Auto</ScrollBarVisibility>
+	<ScrollBarVisibility x:Key="TreeView.ScrollViewer.VerticalScrollBarVisibility">Auto</ScrollBarVisibility>
+	<system:Boolean x:Key="TreeView.SnapsToDevicePixels">True</system:Boolean>
+	<PanningMode x:Key="TreeView.ScrollViewer.PanningMode">Both</PanningMode>
+	<system:Boolean x:Key="TreeView.Stylus.IsFlicksEnabled">False</system:Boolean>
+	<HorizontalAlignment x:Key="TreeView.HorizontalContentAlignment">Stretch</HorizontalAlignment>
+	<VerticalAlignment x:Key="TreeView.VerticalContentAlignment">Center</VerticalAlignment>
+	<system:Boolean x:Key="TreeView.ScrollViewer.Focusable">False</system:Boolean>
+	<system:Boolean x:Key="TreeView.ScrollViewer.CanContentScroll">False</system:Boolean>
+	<FontFamily x:Key="TreeView.FontFamily">pack://application:,,,/OKB.Assets;component/Assets/Fonts/Inter/Inter.ttf#Inter</FontFamily>
+	<system:Double x:Key="TreeView.FontSize">12</system:Double>
+	<FontWeight x:Key="TreeView.FontWeight">Normal</FontWeight>
+
+
+	<SolidColorBrush x:Key="Brush.TreeViewItem.ToggleButton.Background"					Color="{StaticResource Colour.TreeViewItem.ToggleButton.Background}"				ice:Freeze="true" />
+	<SolidColorBrush x:Key="Brush.TreeViewItem.ToggleButton.Stroke"						Color="{StaticResource Colour.TreeViewItem.ToggleButton.Stroke}"					ice:Freeze="true" />
+	<SolidColorBrush x:Key="Brush.TreeViewItem.ToggleButton.Hover.Background"			Color="{StaticResource Colour.TreeViewItem.ToggleButton.Hover.Background}"			ice:Freeze="true" />
+	<SolidColorBrush x:Key="Brush.TreeViewItem.ToggleButton.Hover.Stroke"				Color="{StaticResource Colour.TreeViewItem.ToggleButton.Hover.Stroke}"				ice:Freeze="true" />
+	<SolidColorBrush x:Key="Brush.TreeViewItem.ToggleButton.Checked.Background"			Color="{StaticResource Colour.TreeViewItem.ToggleButton.Checked.Background}"		ice:Freeze="true" />
+	<SolidColorBrush x:Key="Brush.TreeViewItem.ToggleButton.Checked.Stroke"				Color="{StaticResource Colour.TreeViewItem.ToggleButton.Checked.Stroke}"			ice:Freeze="true" />
+	<SolidColorBrush x:Key="Brush.TreeViewItem.ToggleButton.Hover.Checked.Background"	Color="{StaticResource Colour.TreeViewItem.ToggleButton.Hover.Checked.Background}"	ice:Freeze="true" />
+	<SolidColorBrush x:Key="Brush.TreeViewItem.ToggleButton.Hover.Checked.Stroke"		Color="{StaticResource Colour.TreeViewItem.ToggleButton.Hover.Checked.Stroke}"		ice:Freeze="true" />
+
+	<SolidColorBrush x:Key="Brush.TreeViewItem.Foreground"								Color="{StaticResource Colour.TreeViewItem.Foreground}"								ice:Freeze="true" />
+	<SolidColorBrush x:Key="Brush.TreeViewItem.Foreground.Hover"						Color="{StaticResource Colour.TreeViewItem.Foreground.Hover}"						ice:Freeze="true" />
+	<SolidColorBrush x:Key="Brush.TreeViewItem.Foreground.Selected"						Color="{StaticResource Colour.TreeViewItem.Foreground.Selected}"					ice:Freeze="true" />
+	<SolidColorBrush x:Key="Brush.TreeViewItem.Foreground.Selected.Inactive"			Color="{StaticResource Colour.TreeViewItem.Foreground.Selected.Inactive}"			ice:Freeze="true" />
+	<SolidColorBrush x:Key="Brush.TreeViewItem.Foreground.Highlighted"					Color="{StaticResource Colour.TreeViewItem.Foreground.Highlighted}"					ice:Freeze="true" />
+	<SolidColorBrush x:Key="Brush.TreeViewItem.Foreground.Disabled"						Color="{StaticResource Colour.TreeViewItem.Foreground.Disabled}"					ice:Freeze="true" />
+	<SolidColorBrush x:Key="Brush.TreeViewItem.Background"								Color="{StaticResource Colour.TreeViewItem.Background}"								ice:Freeze="true" />
+	<SolidColorBrush x:Key="Brush.TreeViewItem.Background.Hover"						Color="{StaticResource Colour.TreeViewItem.Background.Hover}"						ice:Freeze="true" />
+	<SolidColorBrush x:Key="Brush.TreeViewItem.Background.Selected"						Color="{StaticResource Colour.TreeViewItem.Background.Selected}"					ice:Freeze="true" />
+	<SolidColorBrush x:Key="Brush.TreeViewItem.Background.Selected.Inactive"			Color="{StaticResource Colour.TreeViewItem.Background.Selected.Inactive}"			ice:Freeze="true" />
+	<SolidColorBrush x:Key="Brush.TreeViewItem.Background.Highlighted"					Color="{StaticResource Colour.TreeViewItem.Background.Highlighted}"					ice:Freeze="true" />
+	<SolidColorBrush x:Key="Brush.TreeViewItem.Border"									Color="{StaticResource Colour.TreeViewItem.Border}"									ice:Freeze="true" />
+	
+	<SolidColorBrush x:Key="Brush.TreeView.Foreground"									Color="{StaticResource Colour.TreeView.Foreground}"									ice:Freeze="true" />
+	<SolidColorBrush x:Key="Brush.TreeView.Background"									Color="{StaticResource Colour.TreeView.Background}"									ice:Freeze="true" />
+	<SolidColorBrush x:Key="Brush.TreeView.Background.Disabled"							Color="{StaticResource Colour.TreeView.Background.Disabled}"						ice:Freeze="true" />
+	<SolidColorBrush x:Key="Brush.TreeView.Border"										Color="{StaticResource Colour.TreeView.Border}"										ice:Freeze="true" />
+
+
+
+	<!-- ======== FocusVisual ======== -->
+
+	<Style x:Key="Base.Style.TreeViewItem.FocusVisual">
+		<Setter Property="Control.Template">
+			<Setter.Value>
+				<ControlTemplate>
+					<Rectangle />
+				</ControlTemplate>
+			</Setter.Value>
+		</Setter>
+	</Style>
+
+	
+
+	<!-- ======== VirtualizingPanel ======== -->
+	
+	
+	<ItemsPanelTemplate x:Key="Base.TreeView.ItemsPanelTemplate.VirtualizingPanel">
+		<VirtualizingStackPanel />
+	</ItemsPanelTemplate>
+
+
+	
+	<!-- ======== ListViewItem ToggleButton ======== -->
+	
+	
+	<PathGeometry x:Key="Base.TreeViewItem.Geometry.ToggleButton">
+		<PathGeometry.Figures>
+			<PathFigureCollection>
+				<PathFigure IsFilled="True" StartPoint="0 0" IsClosed="True">
+					<PathFigure.Segments>
+						<PathSegmentCollection>
+							<LineSegment Point="0 6" />
+							<LineSegment Point="6 0" />
+						</PathSegmentCollection>
+					</PathFigure.Segments>
+				</PathFigure>
+			</PathFigureCollection>
+		</PathGeometry.Figures>
+	</PathGeometry>
+
+	<Style x:Key="Base.Style.TreeViewItem.ToggleButton" TargetType="{x:Type ToggleButton}">
+		<Setter Property="Width" Value="{DynamicResource TreeViewItem.ToggleButton.Width}" />
+		<Setter Property="Height" Value="{DynamicResource TreeViewItem.ToggleButton.Height}" />
+		<Setter Property="Focusable" Value="{DynamicResource TreeView.ToggleButton.ScrollViewer.Focusable}" />
+		<Setter Property="Template">
+			<Setter.Value>
+				<ControlTemplate TargetType="{x:Type ToggleButton}">
+					
+					<Border
+						x:Name="bd"
+						Width="{TemplateBinding Width}"
+						Height="{TemplateBinding Height}"
+						Background="{DynamicResource Brush.TreeViewItem.ToggleButton.Background}"
+						Margin="{DynamicResource TreeViewItem.ToggleButton.Margin}"
+						Padding="{DynamicResource TreeViewItem.ToggleButton.Padding}"
+					>
+						<Path
+							x:Name="ExpandPath"
+							Fill="{DynamicResource Brush.TreeViewItem.ToggleButton.Background}"
+							Stroke="{DynamicResource Brush.TreeViewItem.ToggleButton.Stroke}"
+							Data="{DynamicResource Base.TreeViewItem.Geometry.ToggleButton}"
+						>
+							<UIElement.RenderTransform>
+								<RotateTransform
+									Angle="{DynamicResource TreeViewItem.ToggleButton.RotateTransform.Angle}"
+									CenterX="{DynamicResource TreeViewItem.ToggleButton.RotateTransform.Center.X}"
+									CenterY="{DynamicResource TreeViewItem.ToggleButton.RotateTransform.Center.Y}"
+								/>
+							</UIElement.RenderTransform>
+						</Path>
+					</Border>
+
+					<ControlTemplate.Triggers>
+						<Trigger Property="ToggleButton.IsChecked" Value="True">
+							<Setter TargetName="bd" Property="Margin" Value="{DynamicResource TreeViewItem.ToggleButton.Margin.Checked}"/>
+							<Setter TargetName="bd" Property="Padding" Value="{DynamicResource TreeViewItem.ToggleButton.Padding.Checked}"/>
+							<Setter TargetName="ExpandPath" Property="RenderTransform">
+								<Setter.Value>
+									<RotateTransform
+										Angle="{DynamicResource TreeViewItem.ToggleButton.RotateTransform.Angle.Checked}"
+										CenterX="{DynamicResource TreeViewItem.ToggleButton.RotateTransform.Center.X.Checked}"
+										CenterY="{DynamicResource TreeViewItem.ToggleButton.RotateTransform.Center.Y.Checked}"
+									/>
+								</Setter.Value>
+							</Setter>
+							<Setter TargetName="ExpandPath" Property="Shape.Fill" Value="{DynamicResource Brush.TreeViewItem.ToggleButton.Checked.Background}" />
+							<Setter TargetName="ExpandPath" Property="Shape.Stroke" Value="{DynamicResource Brush.TreeViewItem.ToggleButton.Checked.Stroke}" />
+						</Trigger>
+						<Trigger Property="UIElement.IsMouseOver" Value="True">
+							<Setter TargetName="ExpandPath" Property="Shape.Stroke" Value="{DynamicResource Brush.TreeViewItem.ToggleButton.Hover.Stroke}" />
+							<Setter TargetName="ExpandPath" Property="Shape.Fill" Value="{DynamicResource Brush.TreeViewItem.ToggleButton.Hover.Background}" />
+						</Trigger>
+						<MultiTrigger>
+							<MultiTrigger.Conditions>
+								<Condition Property="UIElement.IsMouseOver" Value="True" />
+								<Condition Property="ToggleButton.IsChecked" Value="True" />
+							</MultiTrigger.Conditions>
+							<Setter TargetName="ExpandPath" Property="Shape.Stroke" Value="{DynamicResource Brush.TreeViewItem.ToggleButton.Hover.Checked.Stroke}" />
+							<Setter TargetName="ExpandPath" Property="Shape.Fill" Value="{DynamicResource Brush.TreeViewItem.ToggleButton.Hover.Checked.Background}" />
+						</MultiTrigger>
+					</ControlTemplate.Triggers>
+				</ControlTemplate>
+				
+			</Setter.Value>
+		</Setter>
+	</Style>
+
+	
+	
+	<!-- ======== TreeViewItem ======== -->
+
+	<ControlTemplate x:Key="Base.ControlTemplate.TreeViewItem" TargetType="TreeViewItem" >
+		<Grid>
+			<Grid.ColumnDefinitions>
+				<ColumnDefinition MinWidth="19" Width="Auto" />
+				<ColumnDefinition Width="Auto" />
+				<ColumnDefinition />
+			</Grid.ColumnDefinitions>
+			<Grid.RowDefinitions>
+				<RowDefinition Height="Auto" />
+				<RowDefinition />
+			</Grid.RowDefinitions>
+
+			<ToggleButton
+				x:Name="Expander"
+				Style="{DynamicResource Base.Style.TreeViewItem.ToggleButton}"
+				ClickMode="Press"
+				IsChecked="{Binding Path=IsExpanded, RelativeSource={RelativeSource TemplatedParent}, Mode=TwoWay}"
+			/>
+
+			<Border
+				x:Name="Bd"
+				Grid.Column="1"
+				Background="{TemplateBinding Background}"
+				BorderBrush="{TemplateBinding BorderBrush}"
+				BorderThickness="{TemplateBinding BorderThickness}"
+				Margin="{TemplateBinding Margin}"
+				Padding="{TemplateBinding Padding}"
+				SnapsToDevicePixels="{TemplateBinding SnapsToDevicePixels}"
+			>
+				<ContentPresenter
+					Name="PART_Header"
+					ContentSource="Header"
+					HorizontalAlignment="{TemplateBinding HorizontalContentAlignment}"
+					SnapsToDevicePixels="{TemplateBinding SnapsToDevicePixels}"
+				/>
+			</Border>
+
+			<ItemsPresenter
+				Name="ItemsHost"
+				Grid.Row="1"
+				Grid.Column="1"
+				Grid.ColumnSpan="2"
+			/>
+
+		</Grid>
+
+		<ControlTemplate.Triggers>
+
+			<Trigger Property="TreeViewItem.IsExpanded" Value="False">
+				<Setter TargetName="ItemsHost" Property="Visibility" Value="Collapsed" />
+			</Trigger>
+
+			<Trigger Property="ItemsControl.HasItems" Value="False">
+				<Setter TargetName="Expander" Property="Visibility" Value="Hidden" />
+			</Trigger>
+
+			<DataTrigger Binding="{Binding IsHighlighted}" Value="True">
+				<Setter TargetName="Bd" Property="Background" Value="{DynamicResource Brush.TreeViewItem.Background.Highlighted}"/>
+				<Setter Value="{DynamicResource Brush.TreeViewItem.Foreground.Highlighted}" Property="TreeViewItem.Foreground" />
+			</DataTrigger>
+
+			<Trigger SourceName="Bd" Property="IsMouseOver" Value="True">
+				<Setter TargetName="Bd" Value="{DynamicResource Brush.TreeViewItem.Background.Hover}" Property="Border.Background" />
+				<Setter Value="{DynamicResource Brush.TreeViewItem.Foreground.Hover}" Property="TreeViewItem.Foreground" />
+			</Trigger>
+
+			<Trigger Property="TreeViewItem.IsSelected" Value="True">
+				<Setter TargetName="Bd" Value="{DynamicResource Brush.TreeViewItem.Background.Selected}" Property="Border.Background" />
+				<Setter Value="{DynamicResource Brush.TreeViewItem.Foreground.Selected}" Property="Foreground" />
+			</Trigger>
+
+			<MultiTrigger>
+				<MultiTrigger.Conditions>
+					<Condition Property="TreeViewItem.IsSelected" Value="True" />
+					<Condition Property="TreeViewItem.IsSelectionActive" Value="False" />
+				</MultiTrigger.Conditions>
+				<Setter TargetName="Bd" Value="{DynamicResource Brush.TreeViewItem.Background.Selected.Inactive}" Property="Border.Background" />
+				<Setter Value="{DynamicResource Brush.TreeViewItem.Foreground.Selected.Inactive}" Property="Foreground" />
+			</MultiTrigger>
+
+			<Trigger Property="IsEnabled" Value="False">
+				<Setter Value="{DynamicResource Brush.TreeViewItem.Foreground.Disabled}" Property="Foreground" />
+			</Trigger>
+
+
+		</ControlTemplate.Triggers>
+	</ControlTemplate>
+
+	<Style x:Key="Base.Style.TreeViewItem" TargetType="{x:Type TreeViewItem}">
+		<Setter Property="Foreground" Value="{DynamicResource Brush.TreeViewItem.Foreground}" />
+		<Setter Property="Background" Value="{DynamicResource Brush.TreeViewItem.Background}" />
+		<Setter Property="BorderBrush" Value="{DynamicResource Brush.TreeViewItem.Border}" />
+		<Setter Property="BorderThickness" Value="{DynamicResource TreeViewItem.BorderThickness}" />
+		<Setter Property="HorizontalContentAlignment" Value="{Binding HorizontalContentAlignment, RelativeSource={RelativeSource AncestorType={x:Type ItemsControl}}}" />
+		<Setter Property="VerticalContentAlignment" Value="{Binding VerticalContentAlignment, RelativeSource={RelativeSource AncestorType={x:Type ItemsControl}}}" />
+		<Setter Property="Margin" Value="{DynamicResource TreeViewItem.Margin}" />
+		<Setter Property="Padding" Value="{DynamicResource TreeViewItem.Padding}" />
+		<Setter Property="FontFamily" Value="{DynamicResource TreeViewItem.FontFamily}" />
+		<Setter Property="FontSize" Value="{DynamicResource TreeViewItem.FontSize}" />
+		<Setter Property="FontWeight" Value="{DynamicResource TreeViewItem.FontWeight}" />
+		<Setter Property="SnapsToDevicePixels" Value="{DynamicResource TreeViewItem.SnapsToDevicePixels}" />
+		<Setter Property="FrameworkElement.FocusVisualStyle" Value="{DynamicResource Base.Style.TreeViewItem.FocusVisual}" />
+		<Setter Property="Template" Value="{DynamicResource Base.ControlTemplate.TreeViewItem}" />
+		
+		<!--Extended DataContext Properties-->
+		<Setter Property="IsExpanded" Value="{Binding IsExpanded, Mode=TwoWay}" />
+		<Setter Property="IsSelected" Value="{Binding IsSelected, Mode=TwoWay}" />
+
+		<Style.Triggers>
+			<Trigger Property="VirtualizingPanel.IsVirtualizing" Value="True">
+				<Setter Property="ItemsPanel" Value="{DynamicResource Base.TreeView.ItemsPanelTemplate.VirtualizingPanel}" />
+			</Trigger>
+		</Style.Triggers>
+
+	</Style>
+
+
+
+	<!-- ======== TreeView ======== -->
+
+	<ControlTemplate x:Key="Base.ControlTemplate.TreeView" TargetType="TreeView">
+		<Border
+			Name="Bd"
+			BorderBrush="{TemplateBinding BorderBrush}"
+			BorderThickness="{TemplateBinding BorderThickness}"
+			SnapsToDevicePixels="{TemplateBinding SnapsToDevicePixels}"
+		>
+			<ScrollViewer
+				x:Name="tvScrollViewer"
+				Style="{DynamicResource Base.Style.ScrollViewer}"
+				Background="{TemplateBinding Background}"
+				Focusable="{DynamicResource TreeView.ScrollViewer.Focusable}"
+				CanContentScroll="{DynamicResource TreeView.ScrollViewer.CanContentScroll}"
+				HorizontalScrollBarVisibility="{TemplateBinding ScrollViewer.HorizontalScrollBarVisibility}"
+				VerticalScrollBarVisibility="{TemplateBinding ScrollViewer.VerticalScrollBarVisibility}"
+				PanningMode="{TemplateBinding ScrollViewer.PanningMode}"
+				Padding="{TemplateBinding Padding}"
+				SnapsToDevicePixels="{TemplateBinding SnapsToDevicePixels}"
+			>
+				<ItemsPresenter />
+			</ScrollViewer>
+		</Border>
+		
+		<ControlTemplate.Triggers>
+			<Trigger Property="IsEnabled" Value="False">
+				<Setter TargetName="Bd" Property="Border.Background" Value="{DynamicResource Brush.TreeView.Background.Disabled}" />
+			</Trigger>
+			<Trigger Property="VirtualizingPanel.IsVirtualizing" Value="True">
+				<Setter TargetName="tvScrollViewer" Property="ScrollViewer.CanContentScroll" Value="True" />
+			</Trigger>
+		</ControlTemplate.Triggers>
+		
+	</ControlTemplate>
+	
+	<Style x:Key="Base.Style.TreeView" TargetType="{x:Type TreeView}">
+		<Setter Property="Foreground" Value="{DynamicResource Brush.TreeView.Foreground}" />
+		<Setter Property="Background" Value="{DynamicResource Brush.TreeView.Background}" />
+		<Setter Property="BorderBrush" Value="{DynamicResource Brush.TreeView.Border}" />
+		<Setter Property="BorderThickness" Value="{DynamicResource TreeView.BorderThickness}" />
+		<Setter Property="Margin" Value="{DynamicResource TreeView.Margin}" />
+		<Setter Property="Padding" Value="{DynamicResource TreeView.Padding}" />
+		<Setter Property="FontFamily" Value="{DynamicResource TreeView.FontFamily}" />
+		<Setter Property="FontSize" Value="{DynamicResource TreeView.FontSize}" />
+		<Setter Property="FontWeight" Value="{DynamicResource TreeView.FontWeight}" />
+		<Setter Property="ScrollViewer.HorizontalScrollBarVisibility" Value="{DynamicResource TreeView.ScrollViewer.HorizontalScrollBarVisibility}" />
+		<Setter Property="ScrollViewer.VerticalScrollBarVisibility" Value="{DynamicResource TreeView.ScrollViewer.VerticalScrollBarVisibility}" />
+		<Setter Property="ScrollViewer.PanningMode" Value="{DynamicResource TreeView.ScrollViewer.PanningMode}" />
+		<Setter Property="Stylus.IsFlicksEnabled" Value="{DynamicResource TreeView.Stylus.IsFlicksEnabled}" />
+		<Setter Property="HorizontalContentAlignment" Value="{DynamicResource TreeView.HorizontalContentAlignment}" />
+		<Setter Property="VerticalContentAlignment" Value="{DynamicResource TreeView.VerticalContentAlignment}" />
+		<Setter Property="SnapsToDevicePixels" Value="{DynamicResource TreeView.SnapsToDevicePixels}" />
+		<Setter Property="ItemContainerStyle" Value="{DynamicResource Base.Style.TreeViewItem}" />
+		<Setter Property="Template" Value="{DynamicResource Base.ControlTemplate.TreeView}" />
+
+		<Style.Triggers>
+			<Trigger Property="VirtualizingPanel.IsVirtualizing" Value="True">
+				<Setter Property="ItemsPanel" Value="{DynamicResource Base.TreeView.ItemsPanelTemplate.VirtualizingPanel}" />
+			</Trigger>
+		</Style.Triggers>
+		
+	</Style>
+
+</ResourceDictionary>

@@ -1,0 +1,27 @@
+﻿<ResourceDictionary
+	xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+	xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+>
+	<!--
+		Reference:
+		<ResourceDictionary Source="pack://application:,,,/OKB.Theme;component/Controls/Buttons/Colours.Button.xaml" />
+	-->
+	
+	<!--Core colours from aero2-->
+
+	<Color x:Key="Colour.Button.Foreground">Black</Color>
+	<Color x:Key="Colour.Button.Foreground.Hover">Black</Color>
+	<Color x:Key="Colour.Button.Foreground.Pressed">Black</Color>
+	<Color x:Key="Colour.Button.Foreground.Disabled">#FF838383</Color>
+
+	<Color x:Key="Colour.Button.Background">#FFDDDDDD</Color>
+	<Color x:Key="Colour.Button.Background.Hover">#FFBEE6FD</Color>
+	<Color x:Key="Colour.Button.Background.Pressed">#FFC4E5F6</Color>
+	<Color x:Key="Colour.Button.Background.Disabled">#FFF4F4F4</Color>
+
+	<Color x:Key="Colour.Button.Border">#FF707070</Color>
+	<Color x:Key="Colour.Button.Border.Hover">#FF3C7FB1</Color>
+	<Color x:Key="Colour.Button.Border.Pressed">#FF2C628B</Color>
+	<Color x:Key="Colour.Button.Border.Disabled">#FFADB2B5</Color>
+	
+</ResourceDictionary>

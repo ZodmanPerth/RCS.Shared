@@ -1,0 +1,47 @@
+﻿<ResourceDictionary
+    xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+    xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+	xmlns:ckControls="clr-namespace:OKB.Controls"
+>
+	<Style x:Key="Core.Style.TwoItems" TargetType="ckControls:TwoItems">
+
+		<Setter Property="Margin" Value="0"/>
+		<Setter Property="LeftItemMargin" Value="0"/>
+		<Setter Property="RightItemMargin" Value="0"/>
+
+		<Setter Property="LeftColumnGridLength" Value="auto"/>
+		<Setter Property="GutterColumnGridLength" Value="3"/>
+		<Setter Property="RightColumnGridLength" Value="*"/>
+
+		<Setter Property="Template">
+			<Setter.Value>
+				<ControlTemplate TargetType="ckControls:TwoItems">
+					<Grid
+						HorizontalAlignment="{TemplateBinding HorizontalContentAlignment}"
+						Margin="{TemplateBinding Margin}"
+					>
+						<Grid.ColumnDefinitions>
+							<ColumnDefinition Width="{TemplateBinding LeftColumnGridLength}" />
+							<ColumnDefinition Width="{TemplateBinding GutterColumnGridLength}" />
+							<ColumnDefinition Width="{TemplateBinding RightColumnGridLength}" />
+						</Grid.ColumnDefinitions>
+
+						<ContentPresenter
+							Grid.Column="0"
+							Margin="{TemplateBinding LeftItemMargin}"
+							Content="{TemplateBinding LeftItemContent}" 
+							ContentTemplate="{TemplateBinding LeftItemContentTemplate}"
+						/>
+						<ContentPresenter
+							Grid.Column="2"
+							Margin="{TemplateBinding RightItemMargin}"
+							Content="{TemplateBinding RightItemContent}"
+							ContentTemplate="{TemplateBinding RightItemContentTemplate}"
+						/>
+					</Grid>
+				</ControlTemplate>
+			</Setter.Value>
+		</Setter>
+	</Style>
+	
+</ResourceDictionary>

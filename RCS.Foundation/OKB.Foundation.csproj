@@ -10,9 +10,7 @@
 
   <ItemGroup>
     <PackageReference Include="CommunityToolkit.Mvvm" />
-    <PackageReference Include="Microsoft.WindowsAppSDK" />
-    <PackageReference Include="SharpVectors.Wpf" />
-    <PackageReference Include="System.Reactive" />
+    <PackageReference Include="Riok.Mapperly" />
   </ItemGroup>
 
   <ItemGroup>

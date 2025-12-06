@@ -1,0 +1,53 @@
+﻿<ResourceDictionary
+    xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+    xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+	xmlns:theme="clr-namespace:Microsoft.Windows.Themes;assembly=PresentationFramework.Aero2"
+	xmlns:ice="http://schemas.microsoft.com/winfx/2006/xaml/presentation/options"
+	xmlns:system="clr-namespace:System;assembly=mscorlib"
+	xmlns:ckControls="clr-namespace:OKB.Controls;assembly=OKB.Controls"
+>
+	<!--
+		Reference:
+		<ResourceDictionary Source="pack://application:,,,/OKB.Theme;component/Controls/ToggleSwitch/Theme.ToggleSwitch.xaml" />
+	-->
+	
+	<ResourceDictionary.MergedDictionaries>
+		<!--<ResourceDictionary Source="pack://application:,,,/OKB.Theme;component/Design/Design.Colours.xaml" />-->
+		<ResourceDictionary Source="pack://application:,,,/OKB.Theme;component/Controls/ToggleSwitch/Base.ToggleSwitch.xaml" />
+	</ResourceDictionary.MergedDictionaries>
+
+	<Style x:Key="Theme.Style.ToggleSwitch" TargetType="ckControls:ToggleSwitch" BasedOn="{StaticResource Base.Style.ToggleSwitch.Square}" >
+
+		<Setter Property="FontFamily" Value="{DynamicResource Design.Font.Family.Amiga.DOS}"/>
+		<Setter Property="FontSize" Value="14"/>
+
+		<Style.Resources>
+
+			<system:Double x:Key="ToggleSwitch.Housing.Width">40</system:Double>
+			<system:Double x:Key="ToggleSwitch.Housing.Height">17</system:Double>
+			<CornerRadius x:Key="ToggleSwitch.Housing.CornerRadius">0</CornerRadius>
+
+			<system:Double x:Key="ToggleSwitch.Lever.Width">9</system:Double>
+			<system:Double x:Key="ToggleSwitch.Lever.Height">9</system:Double>
+			<CornerRadius x:Key="ToggleSwitch.Lever.CornerRadius">0</CornerRadius>
+			<system:Double x:Key="ToggleSwitch.Lever.HorizontalSpace">4</system:Double>
+
+			<Thickness x:Key="ToggleSwitch.Content.Margin">12,2,0,0</Thickness>
+
+
+			<SolidColorBrush x:Key="Brush.ToggleSwitch.Foreground"					Color="{StaticResource Design.Colour.Text.Primary}"		ice:Freeze="true" />
+
+			<SolidColorBrush x:Key="Brush.ToggleSwitch.Housing.Background.Off"		Color="{StaticResource Design.Colour.Beige300}"			ice:Freeze="true" />
+			<SolidColorBrush x:Key="Brush.ToggleSwitch.Housing.Background.On"		Color="{StaticResource Design.Colour.White}"			ice:Freeze="true" />
+
+			<SolidColorBrush x:Key="Brush.ToggleSwitch.Housing.Border.Off"			Color="{StaticResource Design.Colour.Beige700}"			ice:Freeze="true" />
+			<SolidColorBrush x:Key="Brush.ToggleSwitch.Housing.Border.On"			Color="{StaticResource Design.Colour.Beige700}"			ice:Freeze="true" />
+
+			<SolidColorBrush x:Key="Brush.ToggleSwitch.Lever.Off"					Color="{StaticResource Design.Colour.Beige700}"			ice:Freeze="true" />
+			<SolidColorBrush x:Key="Brush.ToggleSwitch.Lever.On"					Color="{StaticResource Design.Colour.Beige700}"			ice:Freeze="true" />
+
+		</Style.Resources>
+		
+	</Style>
+
+</ResourceDictionary>

@@ -1,0 +1,112 @@
+﻿<ResourceDictionary
+    xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+    xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+	xmlns:ice="http://schemas.microsoft.com/winfx/2006/xaml/presentation/options"
+	xmlns:system="clr-namespace:System;assembly=mscorlib"
+>
+	<!--
+		Reference:
+		<ResourceDictionary Source="pack://application:,,,/OKB.Theme;component/Controls/Lists/Base.ToolTip.xaml" />
+	-->
+
+	<ResourceDictionary.MergedDictionaries>
+		<ResourceDictionary Source="pack://application:,,,/OKB.Theme;component/Controls/ToolTips/Colours.ToolTip.xaml" />
+	</ResourceDictionary.MergedDictionaries>
+
+
+
+	<!--Base references-->
+
+
+	<Thickness x:Key="ToolTip.Margin">0</Thickness>
+	<Thickness x:Key="ToolTip.Padding">7,6,6,4</Thickness>
+	<Thickness x:Key="ToolTip.Padding.ContentControl">7,5</Thickness>
+	<Thickness x:Key="ToolTip.BorderThickness">1</Thickness>
+	<system:Boolean x:Key="ToolTip.SnapsToDevicePixels">False</system:Boolean>
+	<FontFamily x:Key="ToolTip.FontFamily">pack://application:,,,/OKB.Assets;component/Assets/Fonts/Inter/Inter.ttf#Inter</FontFamily>
+	<system:Double x:Key="ToolTip.FontSize">12</system:Double>
+	<FontWeight x:Key="ToolTip.FontWeight">Normal</FontWeight>
+	<HorizontalAlignment x:Key="ToolTip.HorizontalContentAlignment">Left</HorizontalAlignment>
+	<VerticalAlignment x:Key="ToolTip.VerticalContentAlignment">Center</VerticalAlignment>
+	<system:Boolean x:Key="ToolTip.HasDropShadow">False</system:Boolean>
+	<ClearTypeHint x:Key="ToolTip.RenderOptions.ClearTypeHint">Enabled</ClearTypeHint>
+	<system:Boolean x:Key="ToolTip.SnapsToPixels">True</system:Boolean>
+
+
+	<SolidColorBrush x:Key="Brush.ToolTip.Foreground"						Color="{StaticResource Colour.ToolTip.Foreground}"					ice:Freeze="true" />
+	
+	<SolidColorBrush x:Key="Brush.ToolTip.Background"						Color="{StaticResource Colour.ToolTip.Background}"					ice:Freeze="true" />
+	<SolidColorBrush x:Key="Brush.ToolTip.Background.Disabled"				Color="{StaticResource Colour.ToolTip.Disabled.Background}"			ice:Freeze="true" />
+
+	<SolidColorBrush x:Key="Brush.ToolTip.Border"							Color="{StaticResource Colour.ToolTip.Border}"						ice:Freeze="true" />
+	<SolidColorBrush x:Key="Brush.ToolTip.Border.Disabled"					Color="{StaticResource Colour.ToolTip.Border.Disabled}"				ice:Freeze="true" />
+
+
+
+
+	<!-- ======== ToolTip ======== -->
+
+
+	<ControlTemplate x:Key="Base.ControlTemplate.ToolTip" TargetType="ToolTip" >
+		<Border
+			x:Name="Border" 
+			Background="{TemplateBinding Background}" 
+			BorderBrush="{TemplateBinding BorderBrush}" 
+			BorderThickness="{TemplateBinding BorderThickness}" 
+			SnapsToDevicePixels="{TemplateBinding SnapsToDevicePixels}"
+			Margin="{TemplateBinding Margin}"
+			Padding="{TemplateBinding Padding}"
+		>
+			<ContentPresenter
+				HorizontalAlignment="{TemplateBinding HorizontalContentAlignment}"
+				VerticalAlignment="{TemplateBinding VerticalContentAlignment}"
+				SnapsToDevicePixels="{TemplateBinding SnapsToDevicePixels}"
+			/>
+		</Border>
+	</ControlTemplate>
+
+	<Style x:Key="Base.Style.ToolTip" TargetType="ToolTip" >
+		<Setter Property="Foreground" Value="{DynamicResource Brush.ToolTip.Foreground}" />
+		<Setter Property="Background" Value="{DynamicResource Brush.ToolTip.Background}" />
+		<Setter Property="BorderBrush" Value="{DynamicResource Brush.ToolTip.Border}" />
+		<Setter Property="BorderThickness" Value="{DynamicResource ToolTip.BorderThickness}" />
+		<Setter Property="Margin" Value="{DynamicResource ToolTip.Margin}" />
+		<Setter Property="Padding" Value="{DynamicResource ToolTip.Padding}" />
+		<Setter Property="FontFamily" Value="{DynamicResource ToolTip.FontFamily}" />
+		<Setter Property="FontSize" Value="{DynamicResource ToolTip.FontSize}" />
+		<Setter Property="FontWeight" Value="{DynamicResource ToolTip.FontWeight}" />
+		<Setter Property="HorizontalContentAlignment" Value="{DynamicResource ToolTip.HorizontalContentAlignment}"/>
+		<Setter Property="VerticalContentAlignment" Value="{DynamicResource ToolTip.VerticalContentAlignment}"/>
+		<Setter Property="HasDropShadow" Value="{DynamicResource ToolTip.HasDropShadow}" />
+		<Setter Property="RenderOptions.ClearTypeHint" Value="{DynamicResource ToolTip.RenderOptions.ClearTypeHint}" />
+		<Setter Property="SnapsToDevicePixels" Value="{DynamicResource ToolTip.SnapsToPixels}" />
+		<Setter Property="Template" Value="{StaticResource Base.ControlTemplate.ToolTip}" />
+		<Setter Property="OverridesDefaultStyle" Value="True"/>
+	</Style>
+
+	
+	
+	<!--Content Control-->
+	
+	
+	<!--This is a copy of the content of the ToolTip ControlTemplate, used for rendering without being in a ToolTip-->
+	<ControlTemplate x:Key="Base.ControlTemplate.ContentControl.ToolTip" TargetType="ContentControl" >
+		<Border
+			x:Name="Border" 
+			TextBlock.Foreground="{DynamicResource Brush.ToolTip.Foreground}"
+			Background="{DynamicResource Brush.ToolTip.Background}"
+			BorderBrush="{DynamicResource Brush.ToolTip.Border}"
+			BorderThickness="{DynamicResource ToolTip.BorderThickness}"
+			SnapsToDevicePixels="{DynamicResource ToolTip.SnapsToPixels}"
+			Padding="{DynamicResource ToolTip.Padding.ContentControl}"
+			RenderOptions.ClearTypeHint="{DynamicResource ToolTip.RenderOptions.ClearTypeHint}"
+		>
+			<ContentPresenter 
+				HorizontalAlignment="{DynamicResource ToolTip.HorizontalContentAlignment}"
+				VerticalAlignment="{DynamicResource ToolTip.VerticalContentAlignment}"
+				SnapsToDevicePixels="{DynamicResource ToolTip.SnapsToPixels}"
+			/>
+		</Border>
+	</ControlTemplate>
+
+</ResourceDictionary>

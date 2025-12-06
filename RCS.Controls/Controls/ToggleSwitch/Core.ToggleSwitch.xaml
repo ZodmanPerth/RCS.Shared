@@ -1,0 +1,206 @@
+﻿<ResourceDictionary
+    xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+    xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+	xmlns:ice="http://schemas.microsoft.com/winfx/2006/xaml/presentation/options"
+	xmlns:theme="clr-namespace:Microsoft.Windows.Themes;assembly=PresentationFramework.Aero2"
+	xmlns:system="clr-namespace:System;assembly=mscorlib"
+	xmlns:ckControls="clr-namespace:OKB.Controls"
+>
+	<!--
+		Reference:
+		<ResourceDictionary Source="pack://application:,,,/OKB.Controls;component/Controls/ToggleSwitch/Core.ToggleSwitch.xaml" />
+	-->
+
+	<ResourceDictionary.MergedDictionaries>
+		<ResourceDictionary Source="pack://application:,,,/OKB.Controls;component/Controls/ToggleSwitch/Colours.ToggleSwitch.xaml" />
+	</ResourceDictionary.MergedDictionaries>
+
+
+
+	<!--Base references-->
+
+
+	<Thickness x:Key="ToggleSwitch.Margin">0</Thickness>
+	<Thickness x:Key="ToggleSwitch.Padding">0</Thickness>
+	<HorizontalAlignment x:Key="ToggleSwitch.HorizontalAlignment">Left</HorizontalAlignment>
+	<VerticalAlignment x:Key="ToggleSwitch.VerticalAlignment">Center</VerticalAlignment>
+	<HorizontalAlignment x:Key="ToggleSwitch.HorizontalContentAlignment">Left</HorizontalAlignment>
+	<VerticalAlignment x:Key="ToggleSwitch.VerticalContentAlignment">Center</VerticalAlignment>
+	<Duration x:Key="ToggleSwitch.AnimationDuration">0:0:0.05</Duration>
+	<system:Boolean x:Key="ToggleSwitch.IsAnimationAllowed">True</system:Boolean>
+	<system:Boolean x:Key="ToggleSwitch.SnapsToDevicePixels">True</system:Boolean>
+
+	<system:Double x:Key="ToggleSwitch.Housing.Width">38</system:Double>
+	<system:Double x:Key="ToggleSwitch.Housing.Height">18</system:Double>
+	<Thickness x:Key="ToggleSwitch.Housing.Margin">0</Thickness>
+	<Thickness x:Key="ToggleSwitch.Housing.BorderThickness">1</Thickness>
+	<CornerRadius x:Key="ToggleSwitch.Housing.CornerRadius">9</CornerRadius>
+	<VerticalAlignment x:Key="ToggleSwitch.Housing.VerticalAlignment">Center</VerticalAlignment>
+
+	<system:Double x:Key="ToggleSwitch.Lever.Width">10</system:Double>
+	<system:Double x:Key="ToggleSwitch.Lever.Height">10</system:Double>
+	<CornerRadius x:Key="ToggleSwitch.Lever.CornerRadius">9</CornerRadius>
+	<system:Double x:Key="ToggleSwitch.Lever.HorizontalSpace">5</system:Double>
+
+	<Thickness x:Key="ToggleSwitch.Content.Margin">5,0,0,0</Thickness>
+
+
+	<FontFamily x:Key="ToggleSwitch.FontFamily">pack://application:,,,/OKB.Assets;component/Assets/Fonts/Inter/Inter.ttf#Inter</FontFamily>
+	<FontWeight x:Key="ToggleSwitch.FontWeight">Normal</FontWeight>
+	<system:Double x:Key="ToggleSwitch.FontSize">12</system:Double>
+
+
+	<SolidColorBrush x:Key="Brush.ToggleSwitch.Foreground"					Color="{StaticResource Colour.ToggleSwitch.Foreground}"						ice:Freeze="true" />
+	<SolidColorBrush x:Key="Brush.ToggleSwitch.Foreground.Disabled"			Color="{StaticResource Colour.ToggleSwitch.Foreground.Disabled}"			ice:Freeze="true" />
+
+	<SolidColorBrush x:Key="Brush.ToggleSwitch.Background"					Color="{StaticResource Colour.ToggleSwitch.Background}"						ice:Freeze="true" />
+	<SolidColorBrush x:Key="Brush.ToggleSwitch.Background.Disabled"			Color="{StaticResource Colour.ToggleSwitch.Background.Disabled}"			ice:Freeze="true" />
+
+	<SolidColorBrush x:Key="Brush.ToggleSwitch.Housing.Background.Off"		Color="{StaticResource Colour.ToggleSwitch.Housing.Background.Off}"			ice:Freeze="true" />
+	<SolidColorBrush x:Key="Brush.ToggleSwitch.Housing.Background.On"		Color="{StaticResource Colour.ToggleSwitch.Housing.Background.On}"			ice:Freeze="true" />
+	<SolidColorBrush x:Key="Brush.ToggleSwitch.Housing.Background.Disabled"	Color="{StaticResource Colour.ToggleSwitch.Housing.Background.Disabled}"	ice:Freeze="true" />
+
+	<SolidColorBrush x:Key="Brush.ToggleSwitch.Housing.Border.Off"			Color="{StaticResource Colour.ToggleSwitch.Housing.Border.Off}"				ice:Freeze="true" />
+	<SolidColorBrush x:Key="Brush.ToggleSwitch.Housing.Border.On"			Color="{StaticResource Colour.ToggleSwitch.Housing.Border.On}"				ice:Freeze="true" />
+	<SolidColorBrush x:Key="Brush.ToggleSwitch.Housing.Border.Disabled"		Color="{StaticResource Colour.ToggleSwitch.Housing.Border.Disabled}"		ice:Freeze="true" />
+
+	<SolidColorBrush x:Key="Brush.ToggleSwitch.Lever.Off"					Color="{StaticResource Colour.ToggleSwitch.Lever.Off}"						ice:Freeze="true" />
+	<SolidColorBrush x:Key="Brush.ToggleSwitch.Lever.On"					Color="{StaticResource Colour.ToggleSwitch.Lever.On}"						ice:Freeze="true" />
+	<SolidColorBrush x:Key="Brush.ToggleSwitch.Lever.Disabled"				Color="{StaticResource Colour.ToggleSwitch.Lever.Disabled}"					ice:Freeze="true" />
+
+
+	
+	<!--Kudos: https://stackoverflow.com/a/78547851/117797-->
+	<Style x:Key="Core.Style.ToggleSwitch" TargetType="{x:Type ckControls:ToggleSwitch}" >
+
+		<Setter Property="Margin" Value="{DynamicResource ToggleSwitch.Margin}"/>
+		<Setter Property="Padding" Value="{DynamicResource ToggleSwitch.Padding}"/>
+		<Setter Property="HorizontalAlignment" Value="{DynamicResource ToggleSwitch.HorizontalAlignment}"/>
+		<Setter Property="VerticalAlignment" Value="{DynamicResource ToggleSwitch.VerticalAlignment}"/>
+		<Setter Property="HorizontalContentAlignment" Value="{DynamicResource ToggleSwitch.HorizontalContentAlignment}"/>
+		<Setter Property="VerticalContentAlignment" Value="{DynamicResource ToggleSwitch.VerticalContentAlignment}"/>
+		<Setter Property="SnapsToDevicePixels" Value="{DynamicResource ToggleSwitch.SnapsToDevicePixels}"/>
+		<Setter Property="FocusVisualStyle" Value="{x:Null}" />
+
+		<Setter Property="FontFamily" Value="{DynamicResource ToggleSwitch.FontFamily}"/>
+		<Setter Property="FontSize" Value="{DynamicResource ToggleSwitch.FontSize}"/>
+		<Setter Property="FontWeight" Value="{DynamicResource ToggleSwitch.FontWeight}"/>
+
+		<!--Housing-->
+		<Setter Property="HousingWidth" Value="{DynamicResource ToggleSwitch.Housing.Width}"/>
+		<Setter Property="HousingHeight" Value="{DynamicResource ToggleSwitch.Housing.Height}"/>
+		<Setter Property="HousingBorderThickness" Value="{DynamicResource ToggleSwitch.Housing.BorderThickness}"/>
+		<Setter Property="HousingCornerRadius" Value="{DynamicResource ToggleSwitch.Housing.CornerRadius}"/>
+
+		<!--Lever-->
+		<Setter Property="LeverWidth" Value="{DynamicResource ToggleSwitch.Lever.Width}"/>
+		<Setter Property="LeverHorizontalSpace" Value="{DynamicResource ToggleSwitch.Lever.HorizontalSpace}"/>
+		
+		<!--Animation-->
+		<Setter Property="AnimationDuration" Value="{DynamicResource ToggleSwitch.AnimationDuration}"/>
+		<Setter Property="IsAnimationAllowed" Value="{DynamicResource ToggleSwitch.IsAnimationAllowed}"/>
+
+		<!--Colours-->
+		<Setter Property="Background" Value="{DynamicResource Brush.ToggleSwitch.Background}" />
+		<Setter Property="Foreground" Value="{DynamicResource Brush.ToggleSwitch.Foreground}" />
+
+		<!--Template-->
+		<Setter Property="Template">
+			<Setter.Value>
+				<ControlTemplate TargetType="{x:Type ckControls:ToggleSwitch}">
+					<Border
+						x:Name="bd"
+						Margin="{TemplateBinding Margin}"
+						Padding="{TemplateBinding Padding}"
+						Width="{TemplateBinding Width}"
+						Height="{TemplateBinding Height}"
+						HorizontalAlignment="{TemplateBinding HorizontalAlignment}"
+						VerticalAlignment="{TemplateBinding VerticalAlignment}"
+						Background="{TemplateBinding Background}"
+					>
+						<Grid>
+							<Grid.ColumnDefinitions>
+								<ColumnDefinition Width="auto" />
+								<ColumnDefinition />
+							</Grid.ColumnDefinitions>
+						
+							<Grid
+								Name="Housing"
+								Grid.Column="0"
+								VerticalAlignment="{DynamicResource ToggleSwitch.Housing.VerticalAlignment}"
+								Width="{DynamicResource ToggleSwitch.Housing.Width}"
+								Margin="{DynamicResource ToggleSwitch.Housing.Margin}"
+							>
+								<!--Housing-->
+								<!--Two-element system prevents rounded corner issues-->
+								<!--The TemplateBindings are either calculated or involved in the calculation-->
+								<!--The background must be centered vertically-->
+								<Border
+									x:Name="HousingBorder"
+									Height="{TemplateBinding HousingHeight}"
+									CornerRadius="{TemplateBinding HousingCornerRadius}" 
+									Background="{DynamicResource Brush.ToggleSwitch.Housing.Border.Off}"
+								/>
+								<Border
+									x:Name="HousingBackground"
+									Width="{TemplateBinding HousingInnerWidth}"
+									Height="{TemplateBinding HousingInnerHeight}"
+									VerticalAlignment="Center"
+									CornerRadius="{TemplateBinding HousingInnerCornerRadius}"
+									Background="{DynamicResource Brush.ToggleSwitch.Housing.Background.Off}"
+								/>
+
+								<!--Lever-->
+								<!--The TemplateBindings are either calculated or involved in the calculation-->
+								<!--Must be aligned center-left - is moved by animation system-->
+								<Border
+									x:Name="PART_Lever"
+									Width="{DynamicResource ToggleSwitch.Lever.Width}"
+									Height="{DynamicResource ToggleSwitch.Lever.Height}"
+									HorizontalAlignment="Left"
+									VerticalAlignment="Center"
+									Margin="{TemplateBinding LeverMargin}"
+									CornerRadius="{DynamicResource ToggleSwitch.Lever.CornerRadius}"
+									Background="{DynamicResource Brush.ToggleSwitch.Lever.Off}"
+								>
+									<Border.RenderTransform>
+										<TranslateTransform />
+									</Border.RenderTransform>
+								</Border>
+							</Grid>
+
+							<ContentPresenter
+								Grid.Column="1"
+								Margin="{DynamicResource ToggleSwitch.Content.Margin}"
+								HorizontalAlignment="{DynamicResource ToggleSwitch.HorizontalContentAlignment}"
+								VerticalAlignment="{DynamicResource ToggleSwitch.VerticalContentAlignment}"
+							/>
+						</Grid>
+					</Border>
+
+					<ControlTemplate.Triggers>
+						<Trigger Property="IsChecked" Value="True">
+							<Setter TargetName="PART_Lever" Property="Background" Value="{DynamicResource Brush.ToggleSwitch.Lever.On}" />
+							<Setter TargetName="HousingBackground" Property="Background" Value="{DynamicResource Brush.ToggleSwitch.Housing.Background.On}" />
+							<Setter TargetName="HousingBorder" Property="Background" Value="{DynamicResource Brush.ToggleSwitch.Housing.Border.On}" />
+						</Trigger>
+						<Trigger Property="IsMouseOver" Value="True">
+							<Setter Property="Cursor" Value="Hand"/>
+						</Trigger>
+						<Trigger Property="IsEnabled" Value="False">
+							<Setter Property="Foreground" Value="{DynamicResource Brush.ToggleSwitch.Foreground.Disabled}" />
+							<Setter TargetName="PART_Lever" Property="Background" Value="{DynamicResource Brush.ToggleSwitch.Lever.Disabled}" />
+							<Setter TargetName="HousingBackground" Property="Background" Value="{DynamicResource Brush.ToggleSwitch.Housing.Background.Disabled}" />
+							<Setter TargetName="HousingBorder" Property="Background" Value="{DynamicResource Brush.ToggleSwitch.Housing.Border.Disabled}" />
+						</Trigger>
+					</ControlTemplate.Triggers>
+					
+				</ControlTemplate>
+			</Setter.Value>
+		</Setter>
+	</Style>
+
+	<!--Implicit-->
+	<Style TargetType="ckControls:ToggleSwitch" BasedOn="{StaticResource Core.Style.ToggleSwitch}" />
+
+</ResourceDictionary>

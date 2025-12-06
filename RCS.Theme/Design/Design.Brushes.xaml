@@ -1,0 +1,24 @@
+﻿<ResourceDictionary
+	xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+	xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+	xmlns:ice="http://schemas.microsoft.com/winfx/2006/xaml/presentation/options"
+>
+	<!--
+		Reference:
+		<ResourceDictionary Source="pack://application:,,,/OKB.Theme;component/Design/Design.Brushes.xaml" />
+	-->
+	
+	<ResourceDictionary.MergedDictionaries>
+		<ResourceDictionary Source="pack://application:,,,/OKB.Theme;component/Design/Design.Colours.xaml" />
+	</ResourceDictionary.MergedDictionaries>
+
+	<SolidColorBrush x:Key="Design.Brush.White"						Color="{StaticResource Design.Colour.White}"					ice:Freeze="true" />
+	<SolidColorBrush x:Key="Design.Brush.Black"						Color="{StaticResource Design.Colour.Black}"					ice:Freeze="true" />
+
+	<SolidColorBrush x:Key="Design.Brush.Text.Primary"				Color="{StaticResource Design.Colour.Black}"				ice:Freeze="true" />
+
+	<SolidColorBrush x:Key="Design.Brush.Hyperlink.Blue"			Color="{StaticResource Design.Colour.Hyperlink.Blue}"			ice:Freeze="true" />
+
+	<SolidColorBrush x:Key="Design.Brush.Transparent"				Color="Transparent"											ice:Freeze="true" />
+
+</ResourceDictionary>

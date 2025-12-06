@@ -1,0 +1,212 @@
+﻿<ResourceDictionary
+    xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+    xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+	xmlns:ice="http://schemas.microsoft.com/winfx/2006/xaml/presentation/options"
+	xmlns:theme="clr-namespace:Microsoft.Windows.Themes;assembly=PresentationFramework.Aero2"
+	xmlns:system="clr-namespace:System;assembly=mscorlib"
+>
+	<!--
+		Reference:
+		<ResourceDictionary Source="pack://application:,,,/OKB.Theme;component/Controls/Buttons/Base.Button.xaml" />
+	-->
+
+	<ResourceDictionary.MergedDictionaries>
+		<ResourceDictionary Source="pack://application:,,,/OKB.Theme;component/Controls/Buttons/Colours.Button.xaml" />
+	</ResourceDictionary.MergedDictionaries>
+
+
+
+	<!--Base references-->
+
+
+	<HorizontalAlignment x:Key="Button.HorizontalAlignment">Center</HorizontalAlignment>
+	<VerticalAlignment x:Key="Button.VerticalAlignment">Center</VerticalAlignment>
+
+	<Thickness x:Key="Button.Margin">0</Thickness>
+	<Thickness x:Key="Button.Padding">1</Thickness>
+	
+	<Thickness x:Key="Button.BorderThickness">1</Thickness>
+	<Thickness x:Key="Button.BorderThickness.Hover">1</Thickness>
+	<Thickness x:Key="Button.BorderThickness.Pressed">1</Thickness>
+	<Thickness x:Key="Button.BorderThickness.Disabled">1</Thickness>
+	
+	
+	<CornerRadius x:Key="Button.CornerRadius">1</CornerRadius>
+	<CornerRadius x:Key="Button.CornerRadius.Hover">1</CornerRadius>
+	<CornerRadius x:Key="Button.CornerRadius.Pressed">1</CornerRadius>
+	<CornerRadius x:Key="Button.CornerRadius.Disabled">1</CornerRadius>
+
+	
+	<FontFamily x:Key="Button.FontFamily">pack://application:,,,/OKB.Assets;component/Assets/Fonts/Inter/Inter.ttf#Inter</FontFamily>
+	<FontFamily x:Key="Button.FontFamily.Hover">pack://application:,,,/OKB.Assets;component/Assets/Fonts/Inter/Inter.ttf#Inter</FontFamily>
+	<FontFamily x:Key="Button.FontFamily.Pressed">pack://application:,,,/OKB.Assets;component/Assets/Fonts/Inter/Inter.ttf#Inter</FontFamily>
+	<FontFamily x:Key="Button.FontFamily.Disabled">pack://application:,,,/OKB.Assets;component/Assets/Fonts/Inter/Inter.ttf#Inter</FontFamily>
+	
+	<system:Double x:Key="Button.FontSize">12</system:Double>
+	<system:Double x:Key="Button.FontSize.Hover">12</system:Double>
+	<system:Double x:Key="Button.FontSize.Pressed">12</system:Double>
+	<system:Double x:Key="Button.FontSize.Disabled">12</system:Double>
+	
+	<FontWeight x:Key="Button.FontWeight">Normal</FontWeight>
+	<FontWeight x:Key="Button.FontWeight.Hover">Normal</FontWeight>
+	<FontWeight x:Key="Button.FontWeight.Pressed">Normal</FontWeight>
+	<FontWeight x:Key="Button.FontWeight.Disabled">Normal</FontWeight>
+
+
+	<HorizontalAlignment x:Key="Button.HorizontalContentAlignment">Center</HorizontalAlignment>
+	<HorizontalAlignment x:Key="Button.HorizontalContentAlignment.Hover">Center</HorizontalAlignment>
+	<HorizontalAlignment x:Key="Button.HorizontalContentAlignment.Pressed">Center</HorizontalAlignment>
+	<HorizontalAlignment x:Key="Button.HorizontalContentAlignment.Disabled">Center</HorizontalAlignment>
+
+	<VerticalAlignment x:Key="Button.VerticalContentAlignment">Center</VerticalAlignment>
+	<VerticalAlignment x:Key="Button.VerticalContentAlignment.Hover">Center</VerticalAlignment>
+	<VerticalAlignment x:Key="Button.VerticalContentAlignment.Pressed">Center</VerticalAlignment>
+	<VerticalAlignment x:Key="Button.VerticalContentAlignment.Disabled">Center</VerticalAlignment>
+
+	<Thickness x:Key="Button.Content.Margin">5,4,5,2</Thickness>
+
+
+	<SolidColorBrush x:Key="Brush.Button.FocusVisual.Border"	Color="{StaticResource Colour.Button.Foreground}"			ice:Freeze="true" />
+
+	<SolidColorBrush x:Key="Brush.Button.Foreground"			Color="{StaticResource Colour.Button.Foreground}"			ice:Freeze="true" />
+	<SolidColorBrush x:Key="Brush.Button.Foreground.Hover"		Color="{StaticResource Colour.Button.Foreground.Hover}"		ice:Freeze="true" />
+	<SolidColorBrush x:Key="Brush.Button.Foreground.Pressed"	Color="{StaticResource Colour.Button.Foreground.Pressed}"	ice:Freeze="true" />
+	<SolidColorBrush x:Key="Brush.Button.Foreground.Disabled"	Color="{StaticResource Colour.Button.Foreground.Disabled}"	ice:Freeze="true" />
+
+	<SolidColorBrush x:Key="Brush.Button.Background"			Color="{StaticResource Colour.Button.Background}"			ice:Freeze="true" />
+	<SolidColorBrush x:Key="Brush.Button.Background.Hover"		Color="{StaticResource Colour.Button.Background.Hover}"		ice:Freeze="true" />
+	<SolidColorBrush x:Key="Brush.Button.Background.Pressed"	Color="{StaticResource Colour.Button.Background.Pressed}"	ice:Freeze="true" />
+	<SolidColorBrush x:Key="Brush.Button.Background.Disabled"	Color="{StaticResource Colour.Button.Background.Disabled}"	ice:Freeze="true" />
+	
+	<SolidColorBrush x:Key="Brush.Button.Border"				Color="{StaticResource Colour.Button.Border}"				ice:Freeze="true" />
+	<SolidColorBrush x:Key="Brush.Button.Border.Hover"			Color="{StaticResource Colour.Button.Border.Hover}"			ice:Freeze="true" />
+	<SolidColorBrush x:Key="Brush.Button.Border.Pressed"		Color="{StaticResource Colour.Button.Border.Pressed}"		ice:Freeze="true" />
+	<SolidColorBrush x:Key="Brush.Button.Border.Disabled"		Color="{StaticResource Colour.Button.Border.Disabled}"		ice:Freeze="true" />
+
+
+	<!--FocusVisual-->
+
+	<ControlTemplate x:Key="Base.ControlTemplate.Button.FocusVisual" >
+		<Rectangle
+			Margin="2"
+            StrokeThickness="1"
+            Stroke="{DynamicResource Brush.Button.FocusVisual.Border}"
+            StrokeDashArray="1 2"
+            SnapsToDevicePixels="true"
+		/>
+	</ControlTemplate>
+
+	<Style x:Key="Base.Style.Button.FocusVisual">
+		<Setter Property="Control.Template" Value="{DynamicResource Base.ControlTemplate.Button.FocusVisual}" />
+	</Style>
+
+
+
+	<!--Button-->
+
+	<ControlTemplate x:Key="Base.ControlTemplate.Button" TargetType="Button" >
+		<Grid
+			x:Name="root"
+			Margin="{TemplateBinding Margin}"
+		>
+			<Border 
+				x:Name="background"
+				Padding="{DynamicResource Button.Padding}"
+				BorderThickness="0"
+				CornerRadius="{DynamicResource Button.CornerRadius}"
+				Background="{TemplateBinding Background}"
+			/>
+			<Border 
+				x:Name="border"
+				Padding="{TemplateBinding Padding}"
+				CornerRadius="{DynamicResource Button.CornerRadius}"
+				BorderBrush="{TemplateBinding BorderBrush}"
+				BorderThickness="{TemplateBinding Button.BorderThickness}"
+			>
+				<ContentPresenter
+					x:Name="cp"
+					HorizontalAlignment="{TemplateBinding HorizontalContentAlignment}"
+					VerticalAlignment="{TemplateBinding VerticalContentAlignment}"
+					Margin="{DynamicResource Button.Content.Margin}"
+					TextElement.FontFamily="{TemplateBinding FontFamily}"
+					TextElement.FontSize="{TemplateBinding FontSize}"
+					TextElement.FontWeight="{TemplateBinding FontWeight}"
+					TextElement.Foreground="{TemplateBinding Foreground}"
+				/>
+			</Border>
+		</Grid>
+		<ControlTemplate.Triggers>
+			<Trigger Property="IsMouseOver" Value="True">
+				<Setter Property="Background" TargetName="background" Value="{DynamicResource Brush.Button.Background.Hover}"/>
+				<Setter Property="BorderBrush" TargetName="border" Value="{DynamicResource Brush.Button.Border.Hover}"/>
+				<Setter Property="BorderThickness" TargetName="border" Value="{DynamicResource Button.BorderThickness.Hover}"/>
+
+				<Setter Property="HorizontalAlignment" TargetName="cp" Value="{DynamicResource Button.HorizontalContentAlignment.Hover}"/>
+				<Setter Property="VerticalAlignment" TargetName="cp" Value="{DynamicResource Button.VerticalContentAlignment.Hover}"/>
+				<Setter Property="Margin" TargetName="cp" Value="{DynamicResource Button.Content.Margin.Hover}"/>
+				<Setter Property="TextElement.Foreground" TargetName="cp" Value="{DynamicResource Brush.Button.Foreground.Hover}"/>
+				<Setter Property="TextElement.FontFamily" TargetName="cp" Value="{DynamicResource Button.FontFamily.Hover}"/>
+				<Setter Property="TextElement.FontSize" TargetName="cp" Value="{DynamicResource Button.FontSize.Hover}"/>
+				<Setter Property="TextElement.FontWeight" TargetName="cp" Value="{DynamicResource Button.FontWeight.Hover}"/>
+			</Trigger>
+			<Trigger Property="IsPressed" Value="True">
+				<Setter Property="Background" TargetName="background" Value="{DynamicResource Brush.Button.Background.Pressed}"/>
+				<Setter Property="BorderBrush" TargetName="border" Value="{DynamicResource Brush.Button.Border.Pressed}"/>
+				<Setter Property="BorderThickness" TargetName="border" Value="{DynamicResource Button.BorderThickness.Pressed}"/>
+
+				<Setter Property="HorizontalAlignment" TargetName="cp" Value="{DynamicResource Button.HorizontalContentAlignment.Pressed}"/>
+				<Setter Property="VerticalAlignment" TargetName="cp" Value="{DynamicResource Button.VerticalContentAlignment.Pressed}"/>
+				<Setter Property="Margin" TargetName="cp" Value="{DynamicResource Button.Content.Margin.Pressed}"/>
+				<Setter Property="TextElement.Foreground" TargetName="cp" Value="{DynamicResource Brush.Button.Foreground.Pressed}"/>
+				<Setter Property="TextElement.FontFamily" TargetName="cp" Value="{DynamicResource Button.FontFamily.Pressed}"/>
+				<Setter Property="TextElement.FontSize" TargetName="cp" Value="{DynamicResource Button.FontSize.Pressed}"/>
+				<Setter Property="TextElement.FontWeight" TargetName="cp" Value="{DynamicResource Button.FontWeight.Pressed}"/>
+			</Trigger>
+			<Trigger Property="IsEnabled" Value="False">
+				<Setter Property="Background" TargetName="background" Value="{DynamicResource Brush.Button.Background.Disabled}"/>
+				<Setter Property="BorderBrush" TargetName="border" Value="{DynamicResource Brush.Button.Border.Disabled}"/>
+				<Setter Property="BorderThickness" TargetName="border" Value="{DynamicResource Button.BorderThickness.Disabled}"/>
+
+				<Setter Property="HorizontalAlignment" TargetName="cp" Value="{DynamicResource Button.HorizontalContentAlignment.Disabled}"/>
+				<Setter Property="VerticalAlignment" TargetName="cp" Value="{DynamicResource Button.VerticalContentAlignment.Disabled}"/>
+				<Setter Property="Margin" TargetName="cp" Value="{DynamicResource Button.Content.Margin.Disabled}"/>
+				<Setter Property="TextElement.Foreground" TargetName="cp" Value="{DynamicResource Brush.Button.Foreground.Disabled}"/>
+				<Setter Property="TextElement.FontFamily" TargetName="cp" Value="{DynamicResource Button.FontFamily.Disabled}"/>
+				<Setter Property="TextElement.FontSize" TargetName="cp" Value="{DynamicResource Button.FontSize.Disabled}"/>
+				<Setter Property="TextElement.FontWeight" TargetName="cp" Value="{DynamicResource Button.FontWeight.Disabled}"/>
+			</Trigger>
+		</ControlTemplate.Triggers>
+	</ControlTemplate>
+	
+	<Style x:Key="Base.Style.Button" TargetType="Button" >
+		<Setter Property="HorizontalAlignment" Value="{DynamicResource Button.HorizontalAlignment}" />
+		<Setter Property="VerticalAlignment" Value="{DynamicResource Button.VerticalAlignment}" />
+		<Setter Property="Margin" Value="{DynamicResource Button.Margin}" />
+		<Setter Property="Padding" Value="{DynamicResource Button.Padding}" />
+		<Setter Property="FocusVisualStyle" Value="{DynamicResource Base.Style.Button.FocusVisual}" />
+		<Setter Property="Foreground" Value="{DynamicResource Brush.Button.Foreground}" />
+		<Setter Property="Background" Value="{DynamicResource Brush.Button.Background}" />
+		<Setter Property="BorderBrush" Value="{DynamicResource Brush.Button.Border}" />
+		<Setter Property="BorderThickness" Value="{DynamicResource Button.BorderThickness}" />
+		<Setter Property="HorizontalContentAlignment" Value="{DynamicResource Button.HorizontalContentAlignment}" />
+		<Setter Property="VerticalContentAlignment" Value="{DynamicResource Button.VerticalContentAlignment}" />
+		<Setter Property="FontFamily" Value="{DynamicResource Button.FontFamily}" />
+		<Setter Property="FontSize" Value="{DynamicResource Button.FontSize}" />
+		<Setter Property="FontWeight" Value="{DynamicResource Button.FontWeight}" />
+		<Setter Property="Control.Template" Value="{DynamicResource Base.ControlTemplate.Button}" />
+		<Setter Property="SnapsToDevicePixels" Value="True" />
+	</Style>
+	
+	<Style x:Key="Base.Style.Button.Trim" TargetType="Button" BasedOn="{StaticResource Base.Style.Button}" >
+		<Style.Resources>
+			<Thickness x:Key="Button.Margin">0</Thickness>
+			<Thickness x:Key="Button.Padding">2</Thickness>
+
+			<Thickness x:Key="Button.Content.Margin">0</Thickness>
+			<Thickness x:Key="Button.Content.Margin.Hover">0</Thickness>
+			<Thickness x:Key="Button.Content.Margin.Pressed">0</Thickness>
+			<Thickness x:Key="Button.Content.Margin.Disabled">0</Thickness>
+		</Style.Resources>
+	</Style>
+
+</ResourceDictionary>

@@ -1,0 +1,37 @@
+﻿<ResourceDictionary
+    xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+    xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+	xmlns:theme="clr-namespace:Microsoft.Windows.Themes;assembly=PresentationFramework.Aero2"
+	xmlns:system="clr-namespace:System;assembly=mscorlib"
+	xmlns:ckControls="clr-namespace:OKB.Controls;assembly=OKB.Controls"
+>
+	<!--
+		Reference:
+		<ResourceDictionary Source="pack://application:,,,/OKB.Theme;component/Controls/ToggleSwitch/Base.ToggleSwitch.xaml" />
+	-->
+
+	<ResourceDictionary.MergedDictionaries>
+		<ResourceDictionary Source="pack://application:,,,/OKB.Controls;component/Controls/ToggleSwitch/Core.ToggleSwitch.xaml" />
+		<ResourceDictionary Source="pack://application:,,,/OKB.Assets;component/Design/Design.Font.xaml" />
+	</ResourceDictionary.MergedDictionaries>
+
+	<Style x:Key="Base.Style.ToggleSwitch" TargetType="{x:Type ckControls:ToggleSwitch}" BasedOn="{StaticResource Core.Style.ToggleSwitch}" />
+
+	<Style x:Key="Base.Style.ToggleSwitch.Square" TargetType="{x:Type ckControls:ToggleSwitch}" BasedOn="{StaticResource Core.Style.ToggleSwitch}" >
+		
+		<Style.Resources>
+			<system:Double x:Key="ToggleSwitch.Housing.Width">33</system:Double>
+			<system:Double x:Key="ToggleSwitch.Housing.Height">15</system:Double>
+			<CornerRadius x:Key="ToggleSwitch.Housing.CornerRadius">0</CornerRadius>
+
+			<system:Double x:Key="ToggleSwitch.Lever.Width">9</system:Double>
+			<system:Double x:Key="ToggleSwitch.Lever.Height">9</system:Double>
+			<CornerRadius x:Key="ToggleSwitch.Lever.CornerRadius">0</CornerRadius>
+			<system:Double x:Key="ToggleSwitch.Lever.HorizontalSpace">3</system:Double>
+
+			<Thickness x:Key="ToggleSwitch.Content.Margin">5,2,0,0</Thickness>
+		</Style.Resources>
+		
+	</Style>
+
+</ResourceDictionary>
