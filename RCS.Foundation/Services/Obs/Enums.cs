@@ -1,4 +1,4 @@
-﻿namespace OKB.Services.Obs;
+﻿namespace RCS.Services.Obs;
 
 // Kudos: https://github.com/obsproject/obs-websocket/blob/master/src/eventhandler/types/EventSubscription.h
 [Flags]

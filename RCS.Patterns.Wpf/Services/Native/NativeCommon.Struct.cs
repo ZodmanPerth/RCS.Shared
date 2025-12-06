@@ -1,11 +1,11 @@
-﻿using OKB.Services.Native.Windows;
+﻿using RCS.Services.Native.Windows;
 using System.Diagnostics;
 using System.Runtime.InteropServices;
 using System.Windows;
 
 #nullable disable
 
-namespace OKB.Services.Native;
+namespace RCS.Services.Native;
 
 [StructLayout(LayoutKind.Sequential)]
 record struct AccentPolicyStruct

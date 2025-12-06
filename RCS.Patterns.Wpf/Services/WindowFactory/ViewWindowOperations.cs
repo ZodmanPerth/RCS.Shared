@@ -1,4 +1,4 @@
-﻿namespace OKB.Services.WindowFactory;
+﻿namespace RCS.Services.WindowFactory;
 
 public class ViewWindowOperations
 {

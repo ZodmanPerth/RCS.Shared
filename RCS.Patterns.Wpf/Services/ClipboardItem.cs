@@ -1,6 +1,6 @@
 ﻿#nullable disable
 
-namespace OKB.Models;
+namespace RCS.Models;
 
 public class ClipboardItem
 {

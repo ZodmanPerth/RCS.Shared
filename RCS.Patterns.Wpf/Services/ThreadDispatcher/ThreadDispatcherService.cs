@@ -1,10 +1,10 @@
-﻿using OKB.Logging;
+﻿using RCS.Logging;
 using System.Diagnostics;
 using System.Runtime.CompilerServices;
 using System.Windows;
 using System.Windows.Threading;
 
-namespace OKB.Services;
+namespace RCS.Services;
 
 /// <inheritdoc cref="IThreadDispatcherService" />
 public class ThreadDispatcherService : IThreadDispatcherService

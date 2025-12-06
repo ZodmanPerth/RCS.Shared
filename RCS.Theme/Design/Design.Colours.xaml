@@ -13,6 +13,6 @@
 	
 	<Color x:Key="Design.Colour.Hyperlink.Blue"				ice:Freeze="true" >#3D6AFF</Color>
 
-	<Color x:Key="Design.Colour.OKB.Green"					ice:Freeze="true" >#4ECA45</Color>
+	<Color x:Key="Design.Colour.RCS.Green"					ice:Freeze="true" >#4ECA45</Color>
 	
 </ResourceDictionary>

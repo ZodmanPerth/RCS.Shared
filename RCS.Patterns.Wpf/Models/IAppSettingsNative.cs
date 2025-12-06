@@ -1,9 +1,9 @@
-﻿using OKB.Windows.PersistedState;
+﻿using RCS.Windows.PersistedState;
 using System.ComponentModel;
 
 #nullable disable
 
-namespace OKB.Models;
+namespace RCS.Models;
 
 public interface IAppSettingsNative : INotifyPropertyChanged
 {

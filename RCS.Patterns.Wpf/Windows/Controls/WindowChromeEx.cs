@@ -1,4 +1,4 @@
-﻿using OKB.Services.Native.Windows;
+﻿using RCS.Services.Native.Windows;
 using System.Diagnostics;
 using System.Windows;
 using System.Windows.Controls;
@@ -8,7 +8,7 @@ using System.Windows.Shapes;
 
 #nullable disable
 
-namespace OKB.Windows.Controls;
+namespace RCS.Windows.Controls;
 
 [TemplatePart(Name = PartWindowChromeBorder, Type = typeof(Border))]
 [TemplatePart(Name = PartTitleBarRow, Type = typeof(RowDefinition))]

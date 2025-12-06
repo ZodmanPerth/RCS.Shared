@@ -1,6 +1,6 @@
 ﻿using Riok.Mapperly.Abstractions;
 
-namespace OKB.Models.TestingOverrides;
+namespace RCS.Models.TestingOverrides;
 
 [Mapper]
 public static partial class TestingOverridesMapper

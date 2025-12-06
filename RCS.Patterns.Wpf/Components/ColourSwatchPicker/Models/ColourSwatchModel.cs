@@ -1,7 +1,7 @@
 ﻿using CommunityToolkit.Mvvm.ComponentModel;
 using System.Windows.Media;
 
-namespace OKB.Components.ColourSwatchPicker;
+namespace RCS.Components.ColourSwatchPicker;
 
 /// <summary>The colour model used in the <see cref="ColourSwatchPickerPopup"/></summary>
 public partial class ColourSwatchModel : ObservableObject

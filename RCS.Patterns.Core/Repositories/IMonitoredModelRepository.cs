@@ -1,7 +1,7 @@
-﻿using OKB.Utilities;
+﻿using RCS.Utilities;
 using System.ComponentModel;
 
-namespace OKB.Repositories;
+namespace RCS.Repositories;
 
 /// <summary>
 /// The repository supports keeping a model in memory and persisting whenever a property changes.<br></br>

@@ -1,4 +1,4 @@
-﻿namespace OKB.Repositories;
+﻿namespace RCS.Repositories;
 
 public static class RepositoryExtensions
 {

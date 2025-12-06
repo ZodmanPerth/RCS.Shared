@@ -5,7 +5,7 @@ using Windows.System.Profile;
 
 #nullable disable
 
-namespace OKB.Services.AppRunTime;
+namespace RCS.Services.AppRunTime;
 
 /// <inheritdoc cref="IAppRunTimeService" />
 public class AppRunTimeService : IAppRunTimeService

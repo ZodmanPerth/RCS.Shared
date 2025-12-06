@@ -1,4 +1,4 @@
-﻿namespace OKB.Services.Dtos;
+﻿namespace RCS.Services.Dtos;
 
 public record OpCode1
 (

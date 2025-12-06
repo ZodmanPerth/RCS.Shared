@@ -1,6 +1,6 @@
 ﻿using System.Runtime.InteropServices;
 
-namespace OKB.Services.Native;
+namespace RCS.Services.Native;
 
 /// <summary>Sends input to the active window</summary>
 // Kudos: https://stackoverflow.com/a/8885228/117797

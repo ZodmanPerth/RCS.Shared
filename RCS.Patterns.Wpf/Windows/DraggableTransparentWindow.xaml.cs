@@ -1,7 +1,7 @@
-﻿using OKB.Services.Native.Windows;
+﻿using RCS.Services.Native.Windows;
 using System.Windows.Input;
 
-namespace OKB.Windows;
+namespace RCS.Windows;
 
 public partial class DraggableTransparentWindow : WindowBase
 {

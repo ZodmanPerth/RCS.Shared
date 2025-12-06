@@ -2,7 +2,7 @@
 using System.Reactive.Linq;
 using System.Reactive.Subjects;
 
-namespace OKB.Utilities;
+namespace RCS.Utilities;
 
 /// <summary>
 /// Fires an action after waiting for a delay to pass without further calls to fire the action.<br></br>

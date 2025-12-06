@@ -1,7 +1,7 @@
-﻿using OKB.Models;
+﻿using RCS.Models;
 using RCS.Patterns;
 
-namespace OKB.Services;
+namespace RCS.Services;
 
 public interface IClipboardHistoryService
 {

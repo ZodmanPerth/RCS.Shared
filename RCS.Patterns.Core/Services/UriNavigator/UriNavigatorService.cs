@@ -1,7 +1,7 @@
 ﻿using System.Diagnostics;
 using System.Globalization;
 
-namespace OKB.Services.UriNavigator;
+namespace RCS.Services.UriNavigator;
 
 public class UriNavigatorService : IUriNavigatorService
 {

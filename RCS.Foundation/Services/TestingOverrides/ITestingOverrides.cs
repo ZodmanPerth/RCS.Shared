@@ -1,4 +1,4 @@
-﻿namespace OKB.Models.TestingOverrides;
+﻿namespace RCS.Models.TestingOverrides;
 
 /// <summary>Values that change the behaviour of the app in debug/testing builds</summary>
 public interface ITestingOverrides

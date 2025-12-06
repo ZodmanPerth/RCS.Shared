@@ -1,4 +1,4 @@
-﻿using OKB.Logging;
+﻿using RCS.Logging;
 using System.Diagnostics;
 
 namespace RCS.Patterns;

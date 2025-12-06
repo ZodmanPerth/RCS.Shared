@@ -1,4 +1,4 @@
-﻿namespace OKB;
+﻿namespace RCS;
 
 /// <summary>Invokes an action when disposed</summary>
 public class DisposableAction : IDisposable

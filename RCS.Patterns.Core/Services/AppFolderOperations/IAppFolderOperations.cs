@@ -1,4 +1,4 @@
-﻿namespace OKB.Services;
+﻿namespace RCS.Services;
 
 public interface IAppFolderOperations
 {

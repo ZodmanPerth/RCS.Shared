@@ -1,4 +1,4 @@
-﻿namespace OKB.Logging;
+﻿namespace RCS.Logging;
 
 public interface ILoggerService
 {

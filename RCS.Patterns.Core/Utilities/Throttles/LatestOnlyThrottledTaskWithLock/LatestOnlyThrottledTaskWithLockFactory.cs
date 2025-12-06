@@ -1,7 +1,7 @@
 ﻿using System.Reactive.Concurrency;
 using AsyncLock = Nito.AsyncEx.AsyncLock;
 
-namespace OKB.Utilities;
+namespace RCS.Utilities;
 
 /// <summary>A factory to simplify the creation of <see cref="LatestOnlyThrottledTaskWithLock<>"/></summary>
 public class LatestOnlyThrottledTaskWithLockFactory<T>

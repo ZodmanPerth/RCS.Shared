@@ -1,8 +1,8 @@
-﻿using OKB.Services;
-using OKB.Utilities;
+﻿using RCS.Services;
+using RCS.Utilities;
 using System.ComponentModel;
 
-namespace OKB.Repositories.DiskData;
+namespace RCS.Repositories.DiskData;
 
 /// <inheritdoc cref="IMonitoredModelRepository" />
 /// <remarks>This repository uses the AppData folder on disk as a persistent store.</remarks>

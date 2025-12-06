@@ -1,4 +1,4 @@
-﻿namespace OKB.Services;
+﻿namespace RCS.Services;
 
 /// <summary>A simple interface for the generic <see cref="ModelFilePersistenceManager{TModel}"/></summary>
 public interface IModelFilePersistenceManager : IDisposable

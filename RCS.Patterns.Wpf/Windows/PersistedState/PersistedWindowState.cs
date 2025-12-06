@@ -2,7 +2,7 @@
 
 #nullable disable
 
-namespace OKB.Windows.PersistedState;
+namespace RCS.Windows.PersistedState;
 
 public class PersistedWindowState
 {

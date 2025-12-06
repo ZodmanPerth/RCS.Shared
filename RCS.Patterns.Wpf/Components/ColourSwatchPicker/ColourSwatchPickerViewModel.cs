@@ -2,7 +2,7 @@
 using System.Windows;
 using System.Windows.Media;
 
-namespace OKB.Components.ColourSwatchPicker;
+namespace RCS.Components.ColourSwatchPicker;
 
 public partial class ColourSwatchPickerViewModel : ObservableObject
 {

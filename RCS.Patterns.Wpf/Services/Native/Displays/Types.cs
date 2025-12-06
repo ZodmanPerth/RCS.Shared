@@ -1,6 +1,6 @@
 ﻿using System.Windows;
 
-namespace OKB.Services.Native.Displays;
+namespace RCS.Services.Native.Displays;
 
 public record struct DisplayInfo
 {

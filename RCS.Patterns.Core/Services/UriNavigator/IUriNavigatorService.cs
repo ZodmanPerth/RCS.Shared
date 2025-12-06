@@ -1,4 +1,4 @@
-﻿namespace OKB.Services.UriNavigator;
+﻿namespace RCS.Services.UriNavigator;
 
 /// <summary>Handles Uri Activation</summary>
 public interface IUriNavigatorService

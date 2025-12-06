@@ -1,6 +1,6 @@
 ﻿using System;
 
-namespace OKB.Services.AppRunTime;
+namespace RCS.Services.AppRunTime;
 
 /// <summary>Details about the application instance that is running and the environment it is running in</summary>
 public interface IAppRunTimeService

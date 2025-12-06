@@ -1,4 +1,4 @@
-﻿namespace OKB.Windows;
+﻿namespace RCS.Windows;
 
 public partial class StandardWindow : WindowBase
 {

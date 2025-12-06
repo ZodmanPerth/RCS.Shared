@@ -1,11 +1,11 @@
-﻿using OKB.Logging;
-using OKB.Models;
+﻿using RCS.Logging;
+using RCS.Models;
 using RCS.Patterns;
-using OKB.Utilities;
+using RCS.Utilities;
 using CommunityToolkit.Mvvm.ComponentModel;
 using Windows.ApplicationModel.DataTransfer;
 
-namespace OKB.Services;
+namespace RCS.Services;
 
 public partial class ClipboardHistoryService : ObservableObject, IClipboardHistoryService
 {

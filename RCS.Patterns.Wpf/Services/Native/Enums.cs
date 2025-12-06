@@ -1,4 +1,4 @@
-﻿namespace OKB.Utilities;
+﻿namespace RCS.Utilities;
 
 [Flags]
 public enum KeyModifiers

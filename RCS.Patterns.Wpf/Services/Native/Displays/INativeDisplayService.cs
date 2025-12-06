@@ -1,6 +1,6 @@
 ﻿using System;
 
-namespace OKB.Services.Native.Displays;
+namespace RCS.Services.Native.Displays;
 
 public interface INativeDisplayService
 {

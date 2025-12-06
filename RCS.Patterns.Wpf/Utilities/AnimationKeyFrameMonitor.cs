@@ -1,6 +1,6 @@
 ﻿using System.Windows.Media.Animation;
 
-namespace OKB.Utilities;
+namespace RCS.Utilities;
 
 /// <summary>
 /// Monitors the clock from an animation for key frames.<br></br>

@@ -1,8 +1,8 @@
-﻿using OKB.Repositories;
+﻿using RCS.Repositories;
 using CommunityToolkit.Mvvm.ComponentModel;
 using System.ComponentModel;
 
-namespace OKB.Models.TestingOverrides;
+namespace RCS.Models.TestingOverrides;
 
 /// <inheritdoc cref="ITestingOverrides" />
 public partial class TestingOverrides : ObservableObject, ITestingOverrides, IModelUpdatable<TestingOverrides>

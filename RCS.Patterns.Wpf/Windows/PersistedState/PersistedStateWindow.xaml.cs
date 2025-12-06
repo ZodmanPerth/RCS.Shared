@@ -1,10 +1,10 @@
-﻿using OKB.Models;
-using OKB.Services.Native.Displays;
-using OKB.Windows.PersistedState;
+﻿using RCS.Models;
+using RCS.Services.Native.Displays;
+using RCS.Windows.PersistedState;
 
 #nullable disable
 
-namespace OKB.Windows;
+namespace RCS.Windows;
 
 public partial class PersistedStateWindow : PersistedStateWindowBase
 {

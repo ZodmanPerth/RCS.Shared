@@ -1,6 +1,6 @@
 ﻿using System.Windows;
 
-namespace OKB.Windows;
+namespace RCS.Windows;
 
 public abstract class WindowBase : Window
 {

@@ -1,7 +1,7 @@
 ﻿using System.Windows;
 using System.Windows.Media;
 
-namespace OKB.Services.Native.Windows;
+namespace RCS.Services.Native.Windows;
 
 public interface IWindowService
 {

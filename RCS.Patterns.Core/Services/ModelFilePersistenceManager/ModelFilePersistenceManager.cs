@@ -1,12 +1,12 @@
-﻿using OKB.Repositories;
-using OKB.Utilities;
+﻿using RCS.Repositories;
+using RCS.Utilities;
 using System.ComponentModel;
 using System.Text.Json;
 using System.Text.Json.Serialization;
 
 #nullable disable
 
-namespace OKB.Services;
+namespace RCS.Services;
 
 // Kudos: https://learn.microsoft.com/en-us/dotnet/standard/serialization/system-text-json/how-to?pivots=dotnet-6-0
 /// <summary>

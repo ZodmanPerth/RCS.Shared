@@ -1,7 +1,7 @@
-﻿using OKB.Services.Native.Windows;
+﻿using RCS.Services.Native.Windows;
 using System.Runtime.InteropServices;
 
-namespace OKB.Services.Native.Displays;
+namespace RCS.Services.Native.Displays;
 
 public class NativeDisplayService : INativeDisplayService
 {

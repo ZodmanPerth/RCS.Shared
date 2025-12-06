@@ -1,7 +1,7 @@
 ﻿using System.Runtime.CompilerServices;
 using System.Windows.Threading;
 
-namespace OKB.Services;
+namespace RCS.Services;
 
 /// <summary></summary>
 public interface IThreadDispatcherService

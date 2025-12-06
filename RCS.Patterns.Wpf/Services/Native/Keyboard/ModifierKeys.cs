@@ -1,6 +1,6 @@
-﻿using OKB.Utilities;
+﻿using RCS.Utilities;
 
-namespace OKB.Services.Native.Keyboard;
+namespace RCS.Services.Native.Keyboard;
 
 public static class KeyModifiersUtilities
 {

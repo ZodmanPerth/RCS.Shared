@@ -1,12 +1,12 @@
-﻿using OKB.Logging;
-using OKB.Utilities;
+﻿using RCS.Logging;
+using RCS.Utilities;
 using System.Runtime.InteropServices;
 using System.Windows.Input;
 using Windows.System;
 
 #nullable disable
 
-namespace OKB.Services.Native.Keyboard;
+namespace RCS.Services.Native.Keyboard;
 
 /// <inheritdoc cref="IHotKeyBindingService" />
 public class HotKeyBindingService : IHotKeyBindingService, IDisposable

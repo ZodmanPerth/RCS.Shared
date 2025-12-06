@@ -1,7 +1,7 @@
-﻿using OKB.Windows;
+﻿using RCS.Windows;
 using System.Windows.Controls;
 
-namespace OKB.Services.WindowFactory;
+namespace RCS.Services.WindowFactory;
 
 public class WindowFactoryService : IWindowFactoryService
 {

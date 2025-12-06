@@ -2,7 +2,7 @@
     xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
     xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
 	xmlns:ice="http://schemas.microsoft.com/winfx/2006/xaml/presentation/options"
-	xmlns:windowControls="clr-namespace:OKB.Windows.Controls;assembly=RCS.Patterns.Wpf"
+	xmlns:windowControls="clr-namespace:RCS.Windows.Controls;assembly=RCS.Patterns.Wpf"
 >
 	<ResourceDictionary.MergedDictionaries>
 		<ResourceDictionary Source="pack://application:,,,/RCS.Patterns.Wpf;component/Windows/Controls/WindowChromeEx.xaml" />

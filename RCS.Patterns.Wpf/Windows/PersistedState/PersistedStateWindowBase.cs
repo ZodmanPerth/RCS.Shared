@@ -1,11 +1,11 @@
-﻿using OKB.Models;
-using OKB.Services.Native.Displays;
+﻿using RCS.Models;
+using RCS.Services.Native.Displays;
 using System.Windows;
 
 
 #nullable disable
 
-namespace OKB.Windows.PersistedState;
+namespace RCS.Windows.PersistedState;
 
 /// <summary>Base class for a window that remembers and restores its size, position, etc</summary>
 public abstract class PersistedStateWindowBase : WindowBase

@@ -1,7 +1,7 @@
 ﻿using System.Windows.Controls;
 using System.Windows.Input;
 
-namespace OKB.Components.ColourSwatchPicker;
+namespace RCS.Components.ColourSwatchPicker;
 
 public partial class ColourSwatchPickerView : UserControl
 {

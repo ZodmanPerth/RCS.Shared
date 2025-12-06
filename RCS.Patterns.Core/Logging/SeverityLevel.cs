@@ -1,4 +1,4 @@
-﻿namespace OKB.Logging;
+﻿namespace RCS.Logging;
 
 /// <summary>Severity level of a log</summary>
 public enum SeverityLevel

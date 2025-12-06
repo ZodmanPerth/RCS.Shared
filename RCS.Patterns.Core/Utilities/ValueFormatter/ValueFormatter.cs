@@ -1,9 +1,9 @@
-﻿using OKB.Core.Types;
+﻿using RCS.Core.Types;
 using System.Text;
 
 #nullable enable
 
-namespace OKB.Utilities;
+namespace RCS.Utilities;
 
 /// <summary>Format collections values of different types into text such as "(  1,  2,  3)" or "[1, 2.2, Colors.Red]" </summary>
 /// <remarks>See <see cref="TupleExtensions"/> and <see cref="ObjectExtensions"/> for extension functions that feed this formatter.</remarks>

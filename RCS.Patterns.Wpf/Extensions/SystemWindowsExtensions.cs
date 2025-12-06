@@ -1,5 +1,5 @@
-﻿using OKB.Services.Native.Windows;
-using OKB.Windows;
+﻿using RCS.Services.Native.Windows;
+using RCS.Windows;
 using System.Windows.Media;
 using System.Windows.Shell;
 

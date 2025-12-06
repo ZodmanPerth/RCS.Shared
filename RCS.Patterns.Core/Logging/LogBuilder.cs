@@ -2,7 +2,7 @@
 
 #nullable disable
 
-namespace OKB.Logging;
+namespace RCS.Logging;
 
 public class LogBuilder
 {

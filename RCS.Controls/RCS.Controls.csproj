@@ -5,7 +5,7 @@
     <ImplicitUsings>enable</ImplicitUsings>
     <Nullable>enable</Nullable>
     <UseWPF>true</UseWPF>
-    <RootNamespace>OKB</RootNamespace>
+    <RootNamespace>RCS</RootNamespace>
   </PropertyGroup>
 
   <ItemGroup>
@@ -14,7 +14,6 @@
   </ItemGroup>
 
   <ItemGroup>
-    <ProjectReference Include="..\..\OKB.Kernal\OKB.Kernal.csproj" />
     <ProjectReference Include="..\RCS.Assets\RCS.Assets.csproj" />
   </ItemGroup>
 

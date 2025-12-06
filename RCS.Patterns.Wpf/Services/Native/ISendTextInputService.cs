@@ -1,4 +1,4 @@
-﻿namespace OKB.Services.Native;
+﻿namespace RCS.Services.Native;
 
 public interface ISendTextInputService
 {

@@ -1,8 +1,8 @@
-﻿using OKB.Services.Native;
-using OKB.Services.Native.Windows;
+﻿using RCS.Services.Native;
+using RCS.Services.Native.Windows;
 using System.Windows;
 
-namespace OKB.Windows.Blurred
+namespace RCS.Windows.Blurred
 {
 	public partial class BlurredWindow : WindowBase
 	{

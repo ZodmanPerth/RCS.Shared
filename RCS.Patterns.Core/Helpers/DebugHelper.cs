@@ -1,4 +1,4 @@
-﻿namespace OKB.Helpers;
+﻿namespace RCS.Helpers;
 
 #if DEBUG
 

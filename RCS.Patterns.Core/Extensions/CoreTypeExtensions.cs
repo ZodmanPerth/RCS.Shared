@@ -1,4 +1,4 @@
-﻿namespace OKB.Core.Types;
+﻿namespace RCS.Core.Types;
 
 public static class CoreTypeExtensions
 {

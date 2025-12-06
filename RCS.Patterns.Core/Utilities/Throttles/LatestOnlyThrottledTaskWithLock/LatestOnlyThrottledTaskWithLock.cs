@@ -3,7 +3,7 @@ using System.Reactive.Linq;
 using System.Reactive.Subjects;
 using AsyncLock = Nito.AsyncEx.AsyncLock;
 
-namespace OKB.Utilities;
+namespace RCS.Utilities;
 
 /// <summary>
 /// Fires a task after waiting for a delay to pass without further calls to fire the task.<br></br>

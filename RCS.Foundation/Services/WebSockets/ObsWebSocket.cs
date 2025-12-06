@@ -1,11 +1,11 @@
-﻿using OKB.Services.Dtos;
-using OKB.Services.Obs;
+﻿using RCS.Services.Dtos;
+using RCS.Services.Obs;
 using System.Diagnostics;
 using System.Net.WebSockets;
 using System.Security.Cryptography;
 using System.Text.Json;
 
-namespace OKB.WebSockets;
+namespace RCS.WebSockets;
 
 public class ObsWebSocket
 {

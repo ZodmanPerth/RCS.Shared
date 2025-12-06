@@ -1,6 +1,6 @@
-﻿using OKB.WebSockets;
+﻿using RCS.WebSockets;
 
-namespace OKB.Services;
+namespace RCS.Services;
 
 public class ObsWebService
 {

@@ -1,7 +1,7 @@
-﻿using OKB.Utilities;
+﻿using RCS.Utilities;
 using Windows.System;
 
-namespace OKB.Services.Native.Keyboard;
+namespace RCS.Services.Native.Keyboard;
 
 public class HotKey
 {

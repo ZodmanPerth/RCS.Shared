@@ -1,7 +1,7 @@
 ﻿using System.Windows.Controls;
 using System.Windows.Documents;
 
-namespace OKB.Components;
+namespace RCS.Components;
 
 /// <summary>Wraps the text of a textblock in nonbreaking spaces</summary>
 /// <remarks>

@@ -4,7 +4,7 @@ using System.Windows.Media;
 
 #nullable disable
 
-namespace OKB.Windows.Controls;
+namespace RCS.Windows.Controls;
 
 public partial class WindowChromeEx : Control
 {

@@ -1,7 +1,7 @@
 ﻿using System.Windows.Controls.Primitives;
 using System.Windows.Media;
 
-namespace OKB.Components.ColourSwatchPicker;
+namespace RCS.Components.ColourSwatchPicker;
 
 // DESCRIPTION
 // A popup that displays a palette of colour swatches for selection.

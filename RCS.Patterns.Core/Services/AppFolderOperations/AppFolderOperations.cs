@@ -1,8 +1,8 @@
-﻿namespace OKB.Services;
+﻿namespace RCS.Services;
 
 public class AppFolderOperations : IAppFolderOperations
 {
-	public const string RootAppFolderPath = "OKB";
+	public const string RootAppFolderPath = "RCS";
 
 	string _rootAppFolderPath;
 

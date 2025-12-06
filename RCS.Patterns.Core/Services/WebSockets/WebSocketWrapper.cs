@@ -1,7 +1,7 @@
 ﻿using System.Diagnostics;
 using System.Net.WebSockets;
 
-namespace OKB.WebSockets;
+namespace RCS.WebSockets;
 
 /// <summary>A websocket wrapped with exception handling</summary>
 public class WebSocketWrapper : IAsyncDisposable
